@@ -1,0 +1,2062 @@
+��2: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 15 2024 18:28:55[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=252b4h (152244) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000352dc vaddr=3ffb0000 size=03b94h ( 15252) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00038e78 vaddr=40080000 size=071a0h ( 29088) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0f5ch (659292) map[0m
+[0;32mI (400) esp_image: segment 4: paddr=000e0f84 vaddr=400871a0 size=0f7ech ( 63468) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (437) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (469) cpu_start: Compile time:     Jan 16 2025 17:47:43[0m
+[0;32mI (475) cpu_start: ELF file SHA256:  afe84064e...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB8258 len 00027DA8 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 4009698C len 00009674 (37 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (572) mqtt_example: [APP] Startup..[0m
+[0;32mI (572) mqtt_example: [APP] Free memory: 278380 bytes[0m
+[0;32mI (572) mqtt_example: [APP] IDF version: v5.2.2-dirty[0m
+[0;32mI (622) example_connect: Start example_connect.[0m
+[0;32mI (642) wifi:wifi driver task: 3ffbff80, prio:23, stack:6656, core=0[0m
+[0;32mI (662) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (662) wifi:wifi certification version: v7.0[0m
+[0;32mI (662) wifi:config NVS flash: enabled[0m
+[0;32mI (662) wifi:config nano formating: disabled[0m
+[0;32mI (662) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (662) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (672) wifi:Init management short buffer num: 32[0m
+[0;32mI (672) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (682) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (682) wifi:Init static rx buffer num: 10[0m
+[0;32mI (692) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (692) wifi_init: rx ba win: 6[0m
+[0;32mI (692) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (702) wifi_init: tcp mbox: 6[0m
+[0;32mI (702) wifi_init: tcp tx win: 5760[0m
+[0;32mI (712) wifi_init: tcp rx win: 5760[0m
+[0;32mI (712) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (722) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (732) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (822) wifi:mode : sta (24:6f:28:7c:20:7c)[0m
+[0;32mI (822) wifi:enable tsf[0m
+[0;32mI (822) example_connect: Connecting to Luis Cris y Alvaro...[0m
+[0;32mI (832) example_connect: Waiting for IP(s)[0m
+[0;32mI (3492) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:13[0m
+[0;32mI (3492) wifi:state: init -> auth (b0)[0m
+[0;32mI (3492) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3502) wifi:state: assoc -> run (10)[0m
+[0;32mI (3522) wifi:<ba-add>idx:0 (ifx:0, d4:60:e3:2e:4b:11), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3532) wifi:connected with Luis Cris y Alvaro, aid = 8, channel 13, BW20, bssid = d4:60:e3:2e:4b:11[0m
+[0;32mI (3532) wifi:security: WPA2-PSK, phy: bgn, rssi: -67[0m
+[0;32mI (3542) wifi:pm start, type: 1[0m
+
+[0;32mI (3542) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3662) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4552) esp_netif_handlers: example_netif_sta ip: 192.168.0.30, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4552) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.30[0m
+[0;32mI (4622) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:266f:28ff:fe7c:207c, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4622) example_common: Connected to example_netif_sta[0m
+[0;32mI (4632) example_common: - IPv4 address: 192.168.0.30,[0m
+[0;32mI (4632) example_common: - IPv6 address: fe80:0000:0000:0000:266f:28ff:fe7c:207c, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4652) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (4652) mqtt_example: Other event id:7[0m
+[0;32mI (4932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=1[0m
+[0;32mI (4932) mqtt_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (7872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33530[0m
+[0;32mI (10842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (10842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34110[0m
+[0;32mI (13812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (13812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54820[0m
+[0;32mI (16782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (16782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4147[0m
+[0;32mI (19852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (19852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46867[0m
+[0;32mI (22822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (22822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46064[0m
+[0;32mI (25792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (25792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1066[0m
+[0;32mI (28872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (28872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12686[0m
+[0;32mI (31832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (31832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20730[0m
+[0;32mI (34802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (34802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14306[0m
+[0;32mI (37772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (37772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10010[0m
+[0;32mI (40842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (40842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7344[0m
+[0;32mI (43812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (43812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39254[0m
+[0;32mI (46782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (46782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5370[0m
+[0;32mI (49852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (49852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1908[0m
+[0;32mI (52822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (52822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53081[0m
+[0;32mI (55802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (55802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2407[0m
+[0;32mI (58872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (58872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36828[0m
+[0;32mI (61842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (61842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39538[0m
+[0;32mI (64802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (64812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57659[0m
+[0;32mI (67782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (67782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40687[0m
+[0;32mI (70852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (70852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52751[0m
+[0;32mI (73822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (73822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12328[0m
+[0;32mI (76792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (76792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39872[0m
+[0;32mI (79862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (79862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39379[0m
+[0;32mI (82832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (82832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36958[0m
+[0;32mI (85802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (85802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51658[0m
+[0;32mI (88872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (88882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1257[0m
+[0;32mI (91842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (91842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29674[0m
+[0;32mI (94812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (94812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18799[0m
+[0;32mI (97782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (97782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36532[0m
+[0;32mI (100852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (100852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11336[0m
+[0;32mI (103822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (103822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=77[0m
+[0;32mI (106792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (106792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12118[0m
+[0;32mI (109862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (109862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8528[0m
+[0;32mI (112832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (112832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59183[0m
+[0;32mI (115802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (115802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47525[0m
+[0;32mI (118882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (118882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65476[0m
+[0;32mI (121842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (121842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44604[0m
+[0;32mI (124812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (124812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2631[0m
+[0;32mI (127782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (127782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15890[0m
+[0;32mI (130862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (130862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38761[0m
+[0;32mI (133832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (133832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21006[0m
+[0;32mI (136792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (136802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31165[0m
+[0;32mI (139872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (139872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12196[0m
+[0;32mI (142842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (142842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45555[0m
+[0;32mI (145812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (145812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2007[0m
+[0;32mI (148782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (148782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15583[0m
+[0;32mI (151852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (151852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23251[0m
+[0;32mI (154922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (154922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48283[0m
+[0;32mI (157792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (157792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13666[0m
+[0;32mI (160862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (160862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39322[0m
+[0;32mI (163832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (163832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49431[0m
+[0;32mI (166802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (166802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36415[0m
+[0;32mI (169872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (169872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41563[0m
+[0;32mI (172842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (172842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12620[0m
+[0;32mI (175812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (175812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10276[0m
+[0;32mI (178782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (178782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42065[0m
+[0;32mI (181852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (181852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50738[0m
+[0;32mI (184832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (184832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40989[0m
+[0;32mI (187902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (187902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1517[0m
+[0;32mI (190862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (190872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21384[0m
+[0;32mI (193832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (193832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8228[0m
+[0;32mI (196802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (196802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65083[0m
+[0;32mI (199772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (199772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42356[0m
+[0;32mI (202852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (202852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46367[0m
+[0;32mI (205812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (205822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24552[0m
+[0;32mI (208782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (208792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22787[0m
+[0;32mI (211862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (211862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12039[0m
+[0;32mI (214832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (214832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24606[0m
+[0;32mI (217802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (217802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16703[0m
+[0;32mI (220872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (220872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21122[0m
+[0;32mI (223842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (223842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23998[0m
+[0;32mI (226812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (226812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62230[0m
+[0;32mI (229782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (229782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58531[0m
+[0;32mI (232852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (232852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45053[0m
+[0;32mI (235822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (235822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11990[0m
+[0;32mI (238792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (238792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7586[0m
+[0;32mI (241862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (241862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39152[0m
+[0;32mI (244832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (244832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48807[0m
+[0;32mI (247802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (247802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29505[0m
+[0;32mI (250772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (250772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2417[0m
+[0;32mI (253842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (253842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57185[0m
+[0;32mI (256762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (256762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23484[0m
+[0;32mI (259782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (259782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32109[0m
+[0;32mI (262852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (262852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33837[0m
+[0;32mI (265822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (265822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53942[0m
+[0;32mI (268792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (268792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44265[0m
+[0;32mI (271872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (271872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52183[0m
+[0;32mI (274842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (274842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33963[0m
+[0;32mI (277912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (277912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56673[0m
+[0;32mI (280782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (280782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27074[0m
+[0;32mI (283852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (283852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21010[0m
+[0;32mI (286822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (286822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43174[0m
+[0;32mI (289792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (289792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49688[0m
+[0;32mI (292862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (292862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19004[0m
+[0;32mI (295832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (295832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31106[0m
+[0;32mI (298802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (298802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46790[0m
+[0;32mI (301772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (301772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13492[0m
+[0;32mI (304842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (304842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38287[0m
+[0;32mI (307812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (307812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64922[0m
+[0;32mI (310782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (310782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5507[0m
+[0;32mI (313852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (313852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16067[0m
+[0;32mI (316822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (316822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36649[0m
+[0;32mI (319792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (319802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1975[0m
+[0;32mI (322862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (322862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29191[0m
+[0;32mI (325832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (325832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52798[0m
+[0;32mI (328802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (328802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27023[0m
+[0;32mI (331882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (331882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51815[0m
+[0;32mI (334852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (334852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4586[0m
+[0;32mI (337822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (337822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14093[0m
+[0;32mI (340782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (340792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27262[0m
+[0;32mI (343962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (343962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38380[0m
+[0;32mI (346832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (346832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58563[0m
+[0;32mI (349802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (349802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51317[0m
+[0;32mI (352872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (352872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16095[0m
+[0;32mI (355842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (355842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54627[0m
+[0;32mI (358812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (358812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31289[0m
+[0;32mI (361782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (361782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43819[0m
+[0;32mI (364852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (364852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58566[0m
+[0;32mI (367822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (367822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62236[0m
+[0;32mI (370892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (370892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14423[0m
+[0;32mI (373862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (373862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15547[0m
+[0;32mI (376932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (376932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35733[0m
+[0;32mI (379902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (379902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3872[0m
+[0;32mI (382872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (382872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41483[0m
+[0;32mI (385842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (385842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11218[0m
+[0;32mI (388812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (388812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65103[0m
+[0;32mI (391792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (391792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34772[0m
+[0;32mI (394852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (394852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39278[0m
+[0;32mI (397932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (397932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4630[0m
+[0;32mI (400792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (400792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54429[0m
+[0;32mI (403882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (403882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48423[0m
+[0;32mI (406842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (406842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3745[0m
+[0;32mI (409822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (409822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50513[0m
+[0;32mI (412882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (412882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63028[0m
+[0;32mI (415952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (415952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42272[0m
+[0;32mI (419022) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (419022) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43737[0m
+[0;32mI (421792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (421792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38078[0m
+[0;32mI (424862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (424862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8467[0m
+[0;32mI (427832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (427842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56015[0m
+[0;32mI (430802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (430802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56305[0m
+[0;32mI (433872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (433872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45245[0m
+[0;32mI (436842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (436842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39010[0m
+[0;32mI (439812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (439812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52466[0m
+[0;32mI (442782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (442782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41729[0m
+[0;32mI (445852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (445852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42160[0m
+[0;32mI (448832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (448832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31636[0m
+[0;32mI (451792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (451792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53549[0m
+[0;32mI (454872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (454872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58092[0m
+[0;32mI (457832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (457832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25087[0m
+[0;32mI (460802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (460812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44505[0m
+[0;32mI (463772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (463772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19090[0m
+[0;32mI (466852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (466852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47794[0m
+[0;32mI (469822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (469822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15777[0m
+[0;32mI (472782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (472792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15883[0m
+[0;32mI (475862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (475862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10578[0m
+[0;32mI (478832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (478832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34421[0m
+[0;32mI (481802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (481802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38369[0m
+[0;32mI (484822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (484822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16940[0m
+[0;32mI (487842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (487842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13168[0m
+[0;32mI (490812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (490812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62567[0m
+[0;32mI (493782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (493782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=653[0m
+[0;32mI (496852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (496862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42214[0m
+[0;32mI (499822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (499822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6053[0m
+[0;32mI (502892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (502892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48300[0m
+[0;32mI (505862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (505862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18404[0m
+[0;32mI (508832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (508832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45592[0m
+[0;32mI (511802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (511802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53450[0m
+[0;32mI (514772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (514772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23426[0m
+[0;32mI (517842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (517842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55067[0m
+[0;32mI (520812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (520812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3268[0m
+[0;32mI (523882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (523892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1889[0m
+[0;32mI (526852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (526852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52547[0m
+[0;32mI (529822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (529822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9231[0m
+[0;32mI (532802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (532802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9807[0m
+[0;32mI (535862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (535872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21810[0m
+[0;32mI (538832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (538842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31168[0m
+[0;32mI (541802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (541812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49878[0m
+[0;32mI (544782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (544782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56255[0m
+[0;32mI (547852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (547852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18004[0m
+[0;32mI (550922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (550922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27049[0m
+[0;32mI (553792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (553792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3758[0m
+[0;32mI (556862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (556862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6841[0m
+[0;32mI (559832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (559832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15369[0m
+[0;32mI (562802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (562802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55733[0m
+[0;32mI (565872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (565872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28626[0m
+[0;32mI (568842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (568842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64369[0m
+[0;32mI (571812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (571812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31375[0m
+[0;32mI (574882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (574882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17463[0m
+[0;32mI (577852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (577852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38604[0m
+[0;32mI (580822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (580822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41614[0m
+[0;32mI (583792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (583792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21619[0m
+[0;32mI (586862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (586862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59909[0m
+[0;32mI (589832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (589832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34170[0m
+[0;32mI (592802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (592802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63500[0m
+[0;32mI (595872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (595872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1659[0m
+[0;32mI (598842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (598842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30539[0m
+[0;32mI (601812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (601822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20666[0m
+[0;32mI (604782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (604782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27736[0m
+[0;32mI (607852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (607852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24560[0m
+[0;32mI (610822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (610822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26959[0m
+[0;32mI (613792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (613792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13947[0m
+[0;32mI (616872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (616872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41828[0m
+[0;32mI (619842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (619842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56689[0m
+[0;32mI (622812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (622812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32620[0m
+[0;32mI (625772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (625782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39540[0m
+[0;32mI (628852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (628852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23086[0m
+[0;32mI (631822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (631822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10515[0m
+[0;32mI (634792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (634792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34944[0m
+[0;32mI (637872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (637872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56642[0m
+[0;32mI (640832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (640832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34412[0m
+[0;32mI (643802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (643802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40406[0m
+[0;32mI (646772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (646772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9170[0m
+[0;32mI (649842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (649842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40821[0m
+[0;32mI (652812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (652812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26913[0m
+[0;32mI (655782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (655782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27718[0m
+[0;32mI (658852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (658852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25673[0m
+[0;32mI (661822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (661822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47559[0m
+[0;32mI (664792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (664792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19653[0m
+[0;32mI (667862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (667862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29478[0m
+[0;32mI (670832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (670832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16953[0m
+[0;32mI (673802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (673802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64435[0m
+[0;32mI (676772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (676772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12993[0m
+[0;32mI (679952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (679952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13274[0m
+[0;32mI (682812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (682812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7674[0m
+[0;32mI (685782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (685782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23862[0m
+[0;32mI (688862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (688862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22637[0m
+[0;32mI (691832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (691832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50812[0m
+[0;32mI (694812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (694812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33037[0m
+[0;32mI (697882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (697882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17892[0m
+[0;32mI (700842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (700842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45830[0m
+[0;32mI (703812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (703812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47086[0m
+[0;32mI (706782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (706782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27062[0m
+[0;32mI (709852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (709852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3017[0m
+[0;32mI (712822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (712822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53514[0m
+[0;32mI (715792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (715792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26480[0m
+[0;32mI (718862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (718862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13909[0m
+[0;32mI (721862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (721862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17165[0m
+[0;32mI (724762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (724762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57403[0m
+[0;32mI (727772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (727772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44820[0m
+[0;32mI (730842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (730842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48438[0m
+[0;32mI (733812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (733812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51681[0m
+[0;32mI (736782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (736782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43973[0m
+[0;32mI (739852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (739852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5182[0m
+[0;32mI (742822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (742822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46502[0m
+[0;32mI (745792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (745792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19100[0m
+[0;32mI (748862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (748862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34618[0m
+[0;32mI (751832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (751832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55305[0m
+[0;32mI (754802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (754802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11505[0m
+[0;32mI (757882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (757882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43080[0m
+[0;32mI (760852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (760852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1727[0m
+[0;32mI (763922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (763922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51148[0m
+[0;32mI (766792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (766792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10051[0m
+[0;32mI (769862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (769862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32696[0m
+[0;32mI (772832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (772832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60626[0m
+[0;32mI (775802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (775802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13141[0m
+[0;32mI (778872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (778872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10718[0m
+[0;32mI (781842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (781842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1866[0m
+[0;32mI (784812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (784812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8135[0m
+[0;32mI (787782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (787782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48250[0m
+[0;32mI (790852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (790852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46206[0m
+[0;32mI (793822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (793822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11304[0m
+[0;32mI (796792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (796792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=663[0m
+[0;32mI (799862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (799862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7002[0m
+[0;32mI (802832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (802832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21653[0m
+[0;32mI (805802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (805802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35997[0m
+[0;32mI (808872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (808872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10867[0m
+[0;32mI (811842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (811842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36656[0m
+[0;32mI (814822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (814822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14666[0m
+[0;32mI (817882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (817892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16882[0m
+[0;32mI (820852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (820862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2413[0m
+[0;32mI (823822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (823822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48693[0m
+[0;32mI (826792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (826792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2892[0m
+[0;32mI (829872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (829872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38046[0m
+[0;32mI (832842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (832842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12777[0m
+[0;32mI (835802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (835812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55148[0m
+[0;32mI (838772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (838772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=319[0m
+[0;32mI (841852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (841852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47885[0m
+[0;32mI (844762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (844762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56909[0m
+[0;32mI (847792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (847792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12267[0m
+[0;32mI (850862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (850862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36678[0m
+[0;32mI (853832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (853832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2459[0m
+[0;32mI (856902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (856902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13352[0m
+[0;32mI (859872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (859872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46665[0m
+[0;32mI (862942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (862942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28934[0m
+[0;32mI (865912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (865912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55526[0m
+[0;32mI (868782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (868782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45449[0m
+[0;32mI (871952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (871952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10546[0m
+[0;32mI (874822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (874822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48835[0m
+[0;32mI (877792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (877792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36585[0m
+[0;32mI (880862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (880862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50727[0m
+[0;32mI (883932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (883942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45107[0m
+[0;32mI (886802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (886802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11459[0m
+[0;32mI (889772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (889772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3029[0m
+[0;32mI (892842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (892842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48884[0m
+[0;32mI (895812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (895812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59628[0m
+[0;32mI (898782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (898782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51952[0m
+[0;32mI (901862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (901862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5763[0m
+[0;32mI (904832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (904832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14862[0m
+[0;32mI (907792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (907802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54844[0m
+[0;32mI (910972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (910972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49443[0m
+[0;32mI (913842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (913842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38419[0m
+[0;32mI (916812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (916812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20574[0m
+[0;32mI (919782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (919782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36049[0m
+[0;32mI (922852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (922852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16908[0m
+[0;32mI (925822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (925822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1125[0m
+[0;32mI (928792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (928792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16623[0m
+[0;32mI (931862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (931862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55001[0m
+[0;32mI (934832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (934832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49407[0m
+[0;32mI (937822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (937822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25908[0m
+[0;32mI (940872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (940872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51031[0m
+[0;32mI (943842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (943842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25215[0m
+[0;32mI (946812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (946812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46399[0m
+[0;32mI (949782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (949782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34385[0m
+[0;32mI (952852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (952852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38414[0m
+[0;32mI (955822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (955822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13304[0m
+[0;32mI (958792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (958792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58419[0m
+[0;32mI (961862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (961872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12957[0m
+[0;32mI (964762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (964762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29900[0m
+[0;32mI (967802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (967812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44189[0m
+[0;32mI (970772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (970772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52996[0m
+[0;32mI (973852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (973852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20004[0m
+[0;32mI (976812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (976822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41203[0m
+[0;32mI (979792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (979792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25047[0m
+[0;32mI (982872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (982872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56077[0m
+[0;32mI (985832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (985832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36555[0m
+[0;32mI (988802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (988802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13054[0m
+[0;32mI (991872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (991872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22712[0m
+[0;32mI (994842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (994842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23348[0m
+[0;32mI (997812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (997812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5331[0m
+[0;32mI (1000782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1000782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6360[0m
+[0;32mI (1003852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1003852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65286[0m
+[0;32mI (1006822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1006822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16794[0m
+[0;32mI (1009792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1009792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51880[0m
+[0;32mI (1012862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1012862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24831[0m
+[0;32mI (1015832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1015832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=824[0m
+[0;32mI (1018802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1018802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53507[0m
+[0;32mI (1021872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1021872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47135[0m
+[0;32mI (1024852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1024852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30905[0m
+[0;32mI (1027812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1027812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21131[0m
+[0;32mI (1030782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1030782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40883[0m
+[0;32mI (1033852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1033852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54845[0m
+[0;32mI (1036822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1036822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42640[0m
+[0;32mI (1039792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1039792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1304[0m
+[0;32mI (1042872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1042872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41354[0m
+[0;32mI (1045832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1045842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20834[0m
+[0;32mI (1048802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1048812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14499[0m
+[0;32mI (1051772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1051782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59904[0m
+[0;32mI (1055152) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1055152) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50863[0m
+[0;32mI (1057822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1057822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37282[0m
+[0;32mI (1060792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1060792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5523[0m
+[0;32mI (1063872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1063872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53298[0m
+[0;32mI (1066832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1066832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15272[0m
+[0;32mI (1069802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1069802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21979[0m
+[0;32mI (1072772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1072772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46851[0m
+[0;32mI (1075842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1075842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6690[0m
+[0;32mI (1078812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1078812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22563[0m
+[0;32mI (1081782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1081782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63465[0m
+[0;32mI (1084852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1084852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40232[0m
+[0;32mI (1087822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1087822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57337[0m
+[0;32mI (1090792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1090792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15398[0m
+[0;32mI (1093862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1093862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27998[0m
+[0;32mI (1096842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1096842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31917[0m
+[0;32mI (1099802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1099802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65172[0m
+[0;32mI (1102882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1102882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22482[0m
+[0;32mI (1105842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1105842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2857[0m
+[0;32mI (1108812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1108812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60284[0m
+[0;32mI (1111892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1111892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44587[0m
+[0;32mI (1114962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1114962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47697[0m
+[0;32mI (1117832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1117832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3699[0m
+[0;32mI (1120802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1120802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10676[0m
+[0;32mI (1123872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1123872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49298[0m
+[0;32mI (1126842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1126842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11587[0m
+[0;32mI (1129812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1129812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38311[0m
+[0;32mI (1132782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1132782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48288[0m
+[0;32mI (1135852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1135852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1501[0m
+[0;32mI (1138822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1138822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16997[0m
+[0;32mI (1141792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1141792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38136[0m
+[0;32mI (1144862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1144862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12634[0m
+[0;32mI (1147832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1147832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39470[0m
+[0;32mI (1150802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1150802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56624[0m
+[0;32mI (1153872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1153872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55656[0m
+[0;32mI (1156852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1156852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62666[0m
+[0;32mI (1159812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1159812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41886[0m
+[0;32mI (1162792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1162792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30410[0m
+[0;32mI (1165852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1165852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54251[0m
+[0;32mI (1168822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1168822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17093[0m
+[0;32mI (1172002) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1172002) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48596[0m
+[0;32mI (1174972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1174972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43992[0m
+[0;32mI (1177832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1177832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46433[0m
+[0;32mI (1180802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1180812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20070[0m
+[0;32mI (1183882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1183882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24311[0m
+[0;32mI (1186852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1186852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26461[0m
+[0;32mI (1189822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1189822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54325[0m
+[0;32mI (1192792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1192792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47556[0m
+[0;32mI (1195962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1195962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65016[0m
+[0;32mI (1198832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1198832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41518[0m
+[0;32mI (1201802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1201802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59999[0m
+[0;32mI (1204772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1204772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20859[0m
+[0;32mI (1207842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1207842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49732[0m
+[0;32mI (1210812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1210812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44788[0m
+[0;32mI (1213782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1213782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57938[0m
+[0;32mI (1216852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1216852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27509[0m
+[0;32mI (1219822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1219822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64424[0m
+[0;32mI (1222792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1222792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61896[0m
+[0;32mI (1225862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1225862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10217[0m
+[0;32mI (1228832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1228832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58623[0m
+[0;32mI (1231802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1231802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4111[0m
+[0;32mI (1234872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1234872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35647[0m
+[0;32mI (1237842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1237842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34786[0m
+[0;32mI (1240822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1240822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24922[0m
+[0;32mI (1243792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1243792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23420[0m
+[0;32mI (1246862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1246862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60205[0m
+[0;32mI (1249822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1249822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=522[0m
+[0;32mI (1252802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1252802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45408[0m
+[0;32mI (1255872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1255872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22659[0m
+[0;32mI (1258842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1258842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32620[0m
+[0;32mI (1261812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1261812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2318[0m
+[0;32mI (1264782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1264782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4582[0m
+[0;32mI (1267852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1267852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11755[0m
+[0;32mI (1270822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1270822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50154[0m
+[0;32mI (1273792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1273792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60650[0m
+[0;32mI (1276862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1276862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63062[0m
+[0;32mI (1279832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1279832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9728[0m
+[0;32mI (1282802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1282802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58570[0m
+[0;32mI (1285872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1285872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63313[0m
+[0;32mI (1288842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1288842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49710[0m
+[0;32mI (1291812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1291812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61661[0m
+[0;32mI (1294882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1294892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40876[0m
+[0;32mI (1297852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1297862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57389[0m
+[0;32mI (1300822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1300822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46454[0m
+[0;32mI (1303902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1303902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37372[0m
+[0;32mI (1306862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1306862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25821[0m
+[0;32mI (1309832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1309832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46287[0m
+[0;32mI (1312912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1312912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50638[0m
+[0;32mI (1315882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1315882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27591[0m
+[0;32mI (1318842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1318852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33782[0m
+[0;32mI (1321822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1321822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22069[0m
+[0;32mI (1324792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1324792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45877[0m
+[0;32mI (1327862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1327862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12171[0m
+[0;32mI (1330832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1330832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3153[0m
+[0;32mI (1334002) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1334002) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37048[0m
+[0;32mI (1336872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1336872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31156[0m
+[0;32mI (1339842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1339842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63180[0m
+[0;32mI (1342812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1342812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7392[0m
+[0;32mI (1345782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1345782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12320[0m
+[0;32mI (1348952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1348952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41358[0m
+[0;32mI (1351922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1351922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34398[0m
+[0;32mI (1354892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1354902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38713[0m
+[0;32mI (1357962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1357962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37020[0m
+[0;32mI (1360832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1360832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41580[0m
+[0;32mI (1363802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1363812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43772[0m
+[0;32mI (1366882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1366882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=206[0m
+[0;32mI (1369942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1369942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26636[0m
+[0;32mI (1372812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1372812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7836[0m
+[0;32mI (1375782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1375782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34938[0m
+[0;32mI (1378852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1378852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46606[0m
+[0;32mI (1381822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1381822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26415[0m
+[0;32mI (1384792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1384792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5547[0m
+[0;32mI (1387862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1387872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25135[0m
+[0;32mI (1390852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1390852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25988[0m
+[0;32mI (1393802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1393802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26447[0m
+[0;32mI (1396772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1396772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18156[0m
+[0;32mI (1399852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1399852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33806[0m
+[0;32mI (1402822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1402822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34081[0m
+[0;32mI (1405792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1405792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57989[0m
+[0;32mI (1408862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1408862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32080[0m
+[0;32mI (1411832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1411832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8589[0m
+[0;32mI (1414902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1414902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20998[0m
+[0;32mI (1417872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1417872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36266[0m
+[0;32mI (1420842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1420842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51199[0m
+[0;32mI (1423812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1423812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53565[0m
+[0;32mI (1426782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1426782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37537[0m
+[0;32mI (1429852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1429852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46779[0m
+[0;32mI (1432822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1432822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24819[0m
+[0;32mI (1435792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1435792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63801[0m
+[0;32mI (1438972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1438972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57780[0m
+[0;32mI (1441832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1441842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21570[0m
+[0;32mI (1444802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1444802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45122[0m
+[0;32mI (1447772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1447772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15303[0m
+[0;32mI (1450852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1450852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18361[0m
+[0;32mI (1453812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1453812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19464[0m
+[0;32mI (1456782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1456782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38359[0m
+[0;32mI (1459852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1459862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15377[0m
+[0;32mI (1462832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1462832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8846[0m
+[0;32mI (1465802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1465802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14472[0m
+[0;32mI (1468872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1468872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31011[0m
+[0;32mI (1471842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1471842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35168[0m
+[0;32mI (1474812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1474812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23676[0m
+[0;32mI (1477782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1477782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51436[0m
+[0;32mI (1480852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1480852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2916[0m
+[0;32mI (1483822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1483822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32308[0m
+[0;32mI (1486792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1486792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33223[0m
+[0;32mI (1489862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1489862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26998[0m
+[0;32mI (1492832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1492832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4703[0m
+[0;32mI (1495802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1495802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37663[0m
+[0;32mI (1498772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1498772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58741[0m
+[0;32mI (1501842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1501842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7459[0m
+[0;32mI (1504812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1504822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49615[0m
+[0;32mI (1507782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1507782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2607[0m
+[0;32mI (1510852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1510852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26838[0m
+[0;32mI (1513822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1513822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59000[0m
+[0;32mI (1516792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1516792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28861[0m
+[0;32mI (1519872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1519872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56255[0m
+[0;32mI (1522832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1522832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28994[0m
+[0;32mI (1525802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1525812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61514[0m
+[0;32mI (1528772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1528772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20450[0m
+[0;32mI (1531842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1531852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54336[0m
+[0;32mI (1534812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1534822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18990[0m
+[0;32mI (1537792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1537792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54789[0m
+[0;32mI (1540862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1540862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43195[0m
+[0;32mI (1543832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1543832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4894[0m
+[0;32mI (1546802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1546802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16809[0m
+[0;32mI (1549872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1549872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12251[0m
+[0;32mI (1552842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1552842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45729[0m
+[0;32mI (1555812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1555812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19332[0m
+[0;32mI (1558782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1558782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44216[0m
+[0;32mI (1561852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1561852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52642[0m
+[0;32mI (1564822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1564822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49059[0m
+[0;32mI (1567792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1567792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65179[0m
+[0;32mI (1570862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1570862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5724[0m
+[0;32mI (1573842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1573842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6433[0m
+[0;32mI (1576802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1576802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58954[0m
+[0;32mI (1579772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1579772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41052[0m
+[0;32mI (1582842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1582852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43591[0m
+[0;32mI (1585822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1585822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63363[0m
+[0;32mI (1588882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1588882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47126[0m
+[0;32mI (1591872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1591872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21805[0m
+[0;32mI (1594822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1594822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61332[0m
+[0;32mI (1597792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1597792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3346[0m
+[0;32mI (1600872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1600872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24400[0m
+[0;32mI (1603842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1603842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15210[0m
+[0;32mI (1606812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1606812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60344[0m
+[0;32mI (1609882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1609882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11824[0m
+[0;32mI (1612852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1612852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53587[0m
+[0;32mI (1615822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1615822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19649[0m
+[0;32mI (1618792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1618792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23110[0m
+[0;32mI (1621862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1621862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22147[0m
+[0;32mI (1624832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1624832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24743[0m
+[0;32mI (1627802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1627802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7062[0m
+[0;32mI (1630872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1630872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4474[0m
+[0;32mI (1633842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1633842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53115[0m
+[0;32mI (1636912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1636912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42332[0m
+[0;32mI (1639782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1639782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2049[0m
+[0;32mI (1642852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1642852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27007[0m
+[0;32mI (1645832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1645832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64246[0m
+[0;32mI (1648802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1648802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41870[0m
+[0;32mI (1651862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1651862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30972[0m
+[0;32mI (1654842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1654842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50231[0m
+[0;32mI (1657802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1657802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50822[0m
+[0;32mI (1660872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1660872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38946[0m
+[0;32mI (1663852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1663852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41494[0m
+[0;32mI (1666812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1666812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29320[0m
+[0;32mI (1669782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1669792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6188[0m
+[0;32mI (1672862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1672862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60366[0m
+[0;32mI (1675832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1675832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24514[0m
+[0;32mI (1678802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1678802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22420[0m
+[0;32mI (1681872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1681872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6190[0m
+[0;32mI (1684842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1684842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18682[0m
+[0;32mI (1687812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1687812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5496[0m
+[0;32mI (1690882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1690882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30671[0m
+[0;32mI (1693852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1693852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25005[0m
+[0;32mI (1696822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1696822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33760[0m
+[0;32mI (1699792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1699792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60001[0m
+[0;32mI (1702862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1702862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65484[0m
+[0;32mI (1705832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1705832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36408[0m
+[0;32mI (1708802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1708802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15300[0m
+[0;32mI (1711772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1711772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12949[0m
+[0;32mI (1714842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1714842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16868[0m
+[0;32mI (1717822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1717822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61887[0m
+[0;32mI (1720782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1720782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24272[0m
+[0;32mI (1723852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1723852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41408[0m
+[0;32mI (1726822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1726822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44642[0m
+[0;32mI (1729792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1729792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7491[0m
+[0;32mI (1732862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1732872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9308[0m
+[0;32mI (1735832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1735832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46852[0m
+[0;32mI (1738802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1738812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38675[0m
+[0;32mI (1741772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1741772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6275[0m
+[0;32mI (1744852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1744852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34338[0m
+[0;32mI (1747822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1747822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6781[0m
+[0;32mI (1750892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1750892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9609[0m
+[0;32mI (1753862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1753862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=463[0m
+[0;32mI (1756832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1756832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24004[0m
+[0;32mI (1759802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1759802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64279[0m
+[0;32mI (1762872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1762872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20924[0m
+[0;32mI (1765842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1765842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3602[0m
+[0;32mI (1768812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1768812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61427[0m
+[0;32mI (1771782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1771782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57170[0m
+[0;32mI (1774852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1774852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23459[0m
+[0;32mI (1777822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1777822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7981[0m
+[0;32mI (1780792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1780792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48166[0m
+[0;32mI (1783862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1783862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42064[0m
+[0;32mI (1786842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1786842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36437[0m
+[0;32mI (1789802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1789802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30928[0m
+[0;32mI (1792872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1792872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45493[0m
+[0;32mI (1795952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1795952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40199[0m
+[0;32mI (1798922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1798922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2816[0m
+[0;32mI (1801782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1801782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26037[0m
+[0;32mI (1804852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1804852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44725[0m
+[0;32mI (1807832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1807832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45962[0m
+[0;32mI (1810792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1810802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57526[0m
+[0;32mI (1813872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1813872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3835[0m
+[0;32mI (1816832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1816842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41689[0m
+[0;32mI (1819812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1819812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47818[0m
+[0;32mI (1822782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1822782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=869[0m
+[0;32mI (1825852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1825852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36441[0m
+[0;32mI (1828822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1828822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58452[0m
+[0;32mI (1831792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1831792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61087[0m
+[0;32mI (1834862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1834862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23492[0m
+[0;32mI (1837932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1837932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29881[0m
+[0;32mI (1840802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1840802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62094[0m
+[0;32mI (1843982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1843982) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20434[0m
+[0;32mI (1846952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1846952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59104[0m
+[0;32mI (1849812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1849812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54853[0m
+[0;32mI (1852782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1852782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41993[0m
+[0;32mI (1855852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1855852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43277[0m
+[0;32mI (1858922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1858922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51945[0m
+[0;32mI (1861792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1861792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53881[0m
+[0;32mI (1864862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1864862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31633[0m
+[0;32mI (1867832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1867832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32090[0m
+[0;32mI (1870802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1870802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27436[0m
+[0;32mI (1873872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1873882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48901[0m
+[0;32mI (1876842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1876842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19272[0m
+[0;32mI (1879822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1879822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49344[0m
+[0;32mI (1882782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1882782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23565[0m
+[0;32mI (1885862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1885862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12485[0m
+[0;32mI (1888832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1888832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24752[0m
+[0;32mI (1891802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1891802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7271[0m
+[0;32mI (1894872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1894872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17503[0m
+[0;32mI (1897842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1897842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28050[0m
+[0;32mI (1900812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1900812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31274[0m
+[0;32mI (1903782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1903782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24822[0m
+[0;32mI (1906852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1906852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25877[0m
+[0;32mI (1909822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1909822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18520[0m
+[0;32mI (1912792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1912792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55626[0m
+[0;32mI (1915862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1915862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28621[0m
+[0;32mI (1918832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1918832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38785[0m
+[0;32mI (1921802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1921802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40466[0m
+[0;32mI (1924822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1924822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22156[0m
+[0;32mI (1927842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1927842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40187[0m
+[0;32mI (1930812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1930812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54120[0m
+[0;32mI (1933892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1933892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8447[0m
+[0;32mI (1936852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1936852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46511[0m
+[0;32mI (1939822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1939822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48860[0m
+[0;32mI (1942792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1942792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57741[0m
+[0;32mI (1945862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1945872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54477[0m
+[0;32mI (1948832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1948832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46367[0m
+[0;32mI (1951812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1951812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50396[0m
+[0;32mI (1954882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1954882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45702[0m
+[0;32mI (1957852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1957852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10376[0m
+[0;32mI (1960822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1960822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23809[0m
+[0;32mI (1963782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1963792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31653[0m
+[0;32mI (1966962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1966962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39018[0m
+[0;32mI (1969832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1969832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4127[0m
+[0;32mI (1972802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1972802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34836[0m
+[0;32mI (1975872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1975872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52079[0m
+[0;32mI (1978842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1978842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59202[0m
+[0;32mI (1981812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1981812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38123[0m
+[0;32mI (1984782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1984782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15899[0m
+[0;32mI (1987852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1987852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53191[0m
+[0;32mI (1990822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1990822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1461[0m
+[0;32mI (1993892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1993892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57426[0m
+[0;32mI (1996862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1996862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41844[0m
+[0;32mI (1999832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (1999842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50442[0m
+[0;32mI (2002802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2002802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2883[0m
+[0;32mI (2005872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2005872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47469[0m
+[0;32mI (2008842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2008842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10096[0m
+[0;32mI (2011812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2011812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55131[0m
+[0;32mI (2014782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2014782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27772[0m
+[0;32mI (2017862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2017862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52369[0m
+[0;32mI (2020822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2020832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14328[0m
+[0;32mI (2023792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2023792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48341[0m
+[0;32mI (2026872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2026872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65179[0m
+[0;32mI (2029842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2029842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34246[0m
+[0;32mI (2032802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2032812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20876[0m
+[0;32mI (2035772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2035782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41969[0m
+[0;32mI (2038852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2038852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17284[0m
+[0;32mI (2041822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2041822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33543[0m
+[0;32mI (2044822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2044822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13386[0m
+[0;32mI (2047862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2047862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11666[0m
+[0;32mI (2050832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2050832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61708[0m
+[0;32mI (2053802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2053802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24222[0m
+[0;32mI (2056772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2056772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41475[0m
+[0;32mI (2059842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2059842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20409[0m
+[0;32mI (2062812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2062812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38002[0m
+[0;32mI (2065782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2065782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59280[0m
+[0;32mI (2068852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2068852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5744[0m
+[0;32mI (2071822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2071822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60987[0m
+[0;32mI (2074892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2074892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33022[0m
+[0;32mI (2078282) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2078282) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23244[0m
+[0;32mI (2081042) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2081042) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47142[0m
+[0;32mI (2083822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2083832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2161[0m
+[0;32mI (2086772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2086772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37957[0m
+[0;32mI (2089842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2089842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50953[0m
+[0;32mI (2092812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2092812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55810[0m
+[0;32mI (2095912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2095912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9149[0m
+[0;32mI (2098862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2098862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41278[0m
+[0;32mI (2101832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2101832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23998[0m
+[0;32mI (2104902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2104902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12793[0m
+[0;32mI (2107872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2107872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52351[0m
+[0;32mI (2110842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2110842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17817[0m
+[0;32mI (2113812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2113812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48683[0m
+[0;32mI (2116882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2116882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2827[0m
+[0;32mI (2119852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2119852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64913[0m
+[0;32mI (2122822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2122822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46882[0m
+[0;32mI (2125792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2125792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57808[0m
+[0;32mI (2128872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2128872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31540[0m
+[0;32mI (2131832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2131832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19662[0m
+[0;32mI (2134902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2134902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53657[0m
+[0;32mI (2137972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2137972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53816[0m
+[0;32mI (2140852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2140852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3696[0m
+[0;32mI (2143812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2143812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20792[0m
+[0;32mI (2146882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2146882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2448[0m
+[0;32mI (2149862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2149862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56057[0m
+[0;32mI (2152842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2152842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19610[0m
+[0;32mI (2156202) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2156212) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30859[0m
+[0;32mI (2158862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2158872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62609[0m
+[0;32mI (2161842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2161842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49356[0m
+[0;32mI (2164812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2164812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22392[0m
+[0;32mI (2167772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2167772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19303[0m
+[0;32mI (2170852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2170852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63741[0m
+[0;32mI (2173822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2173822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47414[0m
+[0;32mI (2176792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2176792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7604[0m
+[0;32mI (2179862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2179862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14097[0m
+[0;32mI (2182832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2182832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31522[0m
+[0;32mI (2185802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2185802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5421[0m
+[0;32mI (2188872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2188872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26288[0m
+[0;32mI (2191842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2191842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14587[0m
+[0;32mI (2194812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2194812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35669[0m
+[0;32mI (2197782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2197782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31329[0m
+[0;32mI (2200852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2200852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57928[0m
+[0;32mI (2203822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2203822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38927[0m
+[0;32mI (2206792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2206792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10655[0m
+[0;32mI (2209862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2209862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35000[0m
+[0;32mI (2212832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2212832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62962[0m
+[0;32mI (2215802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2215802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24946[0m
+[0;32mI (2218772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2218772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42204[0m
+[0;32mI (2221842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2221842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58011[0m
+[0;32mI (2224812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2224812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57593[0m
+[0;32mI (2227892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2227892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16023[0m
+[0;32mI (2230862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2230862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55590[0m
+[0;32mI (2233822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2233822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56249[0m
+[0;32mI (2236902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2236902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16161[0m
+[0;32mI (2239872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2239872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28208[0m
+[0;32mI (2242842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2242842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50629[0m
+[0;32mI (2245912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2245912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62806[0m
+[0;32mI (2248782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2248782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18359[0m
+[0;32mI (2251852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2251852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7319[0m
+[0;32mI (2254822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2254822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53746[0m
+[0;32mI (2257792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2257792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39900[0m
+[0;32mI (2260862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2260862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25854[0m
+[0;32mI (2263832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2263832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60531[0m
+[0;32mI (2266802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2266802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49386[0m
+[0;32mI (2269772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2269772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24715[0m
+[0;32mI (2272842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2272842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44125[0m
+[0;32mI (2275812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2275812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=942[0m
+[0;32mI (2278882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2278882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=996[0m
+[0;32mI (2281852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2281852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6444[0m
+[0;32mI (2284762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2284762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6765[0m
+[0;32mI (2287792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2287792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15716[0m
+[0;32mI (2290972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2290972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44882[0m
+[0;32mI (2293842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2293842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61607[0m
+[0;32mI (2296802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2296802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29850[0m
+[0;32mI (2299772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2299772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47840[0m
+[0;32mI (2302842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2302852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12780[0m
+[0;32mI (2305822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2305822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19114[0m
+[0;32mI (2308782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2308782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35100[0m
+[0;32mI (2311862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2311862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19279[0m
+[0;32mI (2314832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2314832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11397[0m
+[0;32mI (2317802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2317802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43532[0m
+[0;32mI (2320872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2320872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56113[0m
+[0;32mI (2323942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2323942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17381[0m
+[0;32mI (2326812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2326812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50052[0m
+[0;32mI (2329782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2329782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47205[0m
+[0;32mI (2332852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2332852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5934[0m
+[0;32mI (2335832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2335832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14422[0m
+[0;32mI (2338792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2338792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52128[0m
+[0;32mI (2341862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2341862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36782[0m
+[0;32mI (2344832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2344832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9225[0m
+[0;32mI (2347802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2347802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1668[0m
+[0;32mI (2350772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2350772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15275[0m
+[0;32mI (2353842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2353852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18722[0m
+[0;32mI (2356812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2356812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43540[0m
+[0;32mI (2359782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2359782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26450[0m
+[0;32mI (2362852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2362852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30090[0m
+[0;32mI (2365822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2365822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58290[0m
+[0;32mI (2368792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2368792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17615[0m
+[0;32mI (2371872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2371872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64596[0m
+[0;32mI (2374832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2374832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54555[0m
+[0;32mI (2377802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2377812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53196[0m
+[0;32mI (2380772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2380782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50127[0m
+[0;32mI (2383852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2383852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25758[0m
+[0;32mI (2386922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2386922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63874[0m
+[0;32mI (2389792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2389792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65264[0m
+[0;32mI (2392862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2392862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26051[0m
+[0;32mI (2395832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2395832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28244[0m
+[0;32mI (2398802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2398802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35786[0m
+[0;32mI (2401872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2401872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26263[0m
+[0;32mI (2404762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2404762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19226[0m
+[0;32mI (2407812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2407812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35614[0m
+[0;32mI (2410782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2410782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46241[0m
+[0;32mI (2413852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2413852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62192[0m
+[0;32mI (2416822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2416822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=439[0m
+[0;32mI (2419792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2419792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57790[0m
+[0;32mI (2422872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2422872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8920[0m
+[0;32mI (2425832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2425832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35006[0m
+[0;32mI (2428802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2428802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22162[0m
+[0;32mI (2431772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2431772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4435[0m
+[0;32mI (2434842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2434842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2686[0m
+[0;32mI (2437812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2437812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49921[0m
+[0;32mI (2440782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2440782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19476[0m
+[0;32mI (2443862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2443862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45277[0m
+[0;32mI (2446822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2446832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57999[0m
+[0;32mI (2449902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2449902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25826[0m
+[0;32mI (2452872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2452872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65264[0m
+[0;32mI (2455842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2455842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50693[0m
+[0;32mI (2458812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2458812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64178[0m
+[0;32mI (2461882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2461882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55463[0m
+[0;32mI (2464862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2464862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3805[0m
+[0;32mI (2467822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2467822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52454[0m
+[0;32mI (2470792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2470792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41846[0m
+[0;32mI (2473862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2473862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35213[0m
+[0;32mI (2476832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2476832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32234[0m
+[0;32mI (2479802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2479802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12269[0m
+[0;32mI (2482872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2482872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52954[0m
+[0;32mI (2485862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2485862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15869[0m
+[0;32mI (2488812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2488812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45267[0m
+[0;32mI (2491782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2491782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4404[0m
+[0;32mI (2494852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2494852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13978[0m
+[0;32mI (2497822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2497822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6373[0m
+[0;32mI (2500792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2500792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36070[0m
+[0;32mI (2503762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2503762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49871[0m
+[0;32mI (2506832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2506832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35941[0m
+[0;32mI (2509802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2509802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9293[0m
+[0;32mI (2512872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2512882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42160[0m
+[0;32mI (2515852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2515852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9932[0m
+[0;32mI (2518822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2518822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3644[0m
+[0;32mI (2521892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2521892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26668[0m
+[0;32mI (2524822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2524822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7519[0m
+[0;32mI (2527832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2527832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61256[0m
+[0;32mI (2530802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2530802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19779[0m
+[0;32mI (2533892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2533892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30047[0m
+[0;32mI (2536842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2536852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27049[0m
+[0;32mI (2539812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2539812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3083[0m
+[0;32mI (2542782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2542782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10205[0m
+[0;32mI (2545852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2545852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44361[0m
+[0;32mI (2548822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2548822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15947[0m
+[0;32mI (2551792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2551792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24300[0m
+[0;32mI (2554862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2554862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3372[0m
+[0;32mI (2557832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2557832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2952[0m
+[0;32mI (2560802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2560802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9553[0m
+[0;32mI (2563872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2563872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8102[0m
+[0;32mI (2566842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2566842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60369[0m
+[0;32mI (2569822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2569822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55060[0m
+[0;32mI (2572782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2572782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35641[0m
+[0;32mI (2575872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2575872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54816[0m
+[0;32mI (2578832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2578832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61949[0m
+[0;32mI (2581802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2581802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29598[0m
+[0;32mI (2584872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2584872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59901[0m
+[0;32mI (2587942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2587942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41874[0m
+[0;32mI (2590802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2590812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56953[0m
+[0;32mI (2593772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2593772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36944[0m
+[0;32mI (2596852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2596852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28955[0m
+[0;32mI (2599822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2599822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6229[0m
+[0;32mI (2602792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2602792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17035[0m
+[0;32mI (2605862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2605862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16678[0m
+[0;32mI (2608832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2608832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53059[0m
+[0;32mI (2611802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2611802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63380[0m
+[0;32mI (2614972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2614972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14987[0m
+[0;32mI (2617842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2617842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22418[0m
+[0;32mI (2620812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2620812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2655[0m
+[0;32mI (2623782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2623782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15416[0m
+[0;32mI (2626852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2626852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22498[0m
+[0;32mI (2629822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2629822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24578[0m
+[0;32mI (2632792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2632792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23234[0m
+[0;32mI (2635862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2635872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36263[0m
+[0;32mI (2638832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2638842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12926[0m
+[0;32mI (2641802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2641802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62754[0m
+[0;32mI (2644772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2644772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7694[0m
+[0;32mI (2647852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2647852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32896[0m
+[0;32mI (2650812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2650812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15786[0m
+[0;32mI (2653782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2653782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8381[0m
+[0;32mI (2656852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2656862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41395[0m
+[0;32mI (2659832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2659832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20162[0m
+[0;32mI (2662812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2662812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10836[0m
+[0;32mI (2665872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2665872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48475[0m
+[0;32mI (2668842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2668842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34819[0m
+[0;32mI (2671812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2671812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35559[0m
+[0;32mI (2674882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2674882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60403[0m
+[0;32mI (2677852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2677852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20102[0m
+[0;32mI (2680822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2680822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51553[0m
+[0;32mI (2683792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2683792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16671[0m
+[0;32mI (2686862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2686862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58529[0m
+[0;32mI (2689832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2689832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31375[0m
+[0;32mI (2692802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2692802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63279[0m
+[0;32mI (2695872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2695872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45867[0m
+[0;32mI (2698842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2698842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11111[0m
+[0;32mI (2701812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2701812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65313[0m
+[0;32mI (2704782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2704782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37318[0m
+[0;32mI (2707852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2707852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54606[0m
+[0;32mI (2710822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2710822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21724[0m
+[0;32mI (2713792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2713792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63889[0m
+[0;32mI (2716862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2716862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22390[0m
+[0;32mI (2719832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2719832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16345[0m
+[0;32mI (2722802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2722802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48090[0m
+[0;32mI (2725882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2725882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50278[0m
+[0;32mI (2728852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2728852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52896[0m
+[0;32mI (2731822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2731822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4381[0m
+[0;32mI (2734792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2734792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39877[0m
+[0;32mI (2737862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2737862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29972[0m
+[0;32mI (2740832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2740832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6281[0m
+[0;32mI (2743902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2743902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59396[0m
+[0;32mI (2746872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2746872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23169[0m
+[0;32mI (2749942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2749942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9578[0m
+[0;32mI (2752822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2752822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31611[0m
+[0;32mI (2755882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2755882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32905[0m
+[0;32mI (2758852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2758852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31468[0m
+[0;32mI (2761822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2761822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53064[0m
+[0;32mI (2764802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2764802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5392[0m
+[0;32mI (2767862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2767862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55043[0m
+[0;32mI (2770832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2770832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32871[0m
+[0;32mI (2773812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2773812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11698[0m
+[0;32mI (2776982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2776982) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51429[0m
+[0;32mI (2779952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2779952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41885[0m
+[0;32mI (2782812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2782812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58131[0m
+[0;32mI (2785782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2785782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11100[0m
+[0;32mI (2788852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2788852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21219[0m
+[0;32mI (2791932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2791932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29888[0m
+[0;32mI (2794802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2794802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23596[0m
+[0;32mI (2797872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2797872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1136[0m
+[0;32mI (2800842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2800842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25153[0m
+[0;32mI (2803912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2803912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49600[0m
+[0;32mI (2806882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2806882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56759[0m
+[0;32mI (2809852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2809852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38091[0m
+[0;32mI (2812822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2812822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11083[0m
+[0;32mI (2815792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2815792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37026[0m
+[0;32mI (2819062) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2819062) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57654[0m
+[0;32mI (2821832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2821832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49998[0m
+[0;32mI (2824802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2824802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44401[0m
+[0;32mI (2827872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2827872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50435[0m
+[0;32mI (2830842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2830842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51849[0m
+[0;32mI (2833812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2833812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46813[0m
+[0;32mI (2836782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2836782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55144[0m
+[0;32mI (2839852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2839852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20907[0m
+[0;32mI (2842822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2842822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19405[0m
+[0;32mI (2845792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2845792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29344[0m
+[0;32mI (2848872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2848872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29674[0m
+[0;32mI (2851832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2851832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1126[0m
+[0;32mI (2854802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2854802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14550[0m
+[0;32mI (2857772) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2857772) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29978[0m
+[0;32mI (2860842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2860842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52303[0m
+[0;32mI (2863822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2863822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4350[0m
+[0;32mI (2866792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2866792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41768[0m
+[0;32mI (2869862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2869862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51654[0m
+[0;32mI (2872832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2872832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10089[0m
+[0;32mI (2875802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2875802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29350[0m
+[0;32mI (2878872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2878872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17831[0m
+[0;32mI (2881842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2881842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20294[0m
+[0;32mI (2884762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2884762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57299[0m
+[0;32mI (2887782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2887782) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51507[0m
+[0;32mI (2890852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2890852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4321[0m
+[0;32mI (2893822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2893822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31026[0m
+[0;32mI (2896792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2896792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19159[0m
+[0;32mI (2899862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2899862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59325[0m
+[0;32mI (2902832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2902832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1623[0m
+[0;32mI (2905802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2905802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21381[0m
+[0;32mI (2908872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2908872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33893[0m
+[0;32mI (2911842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2911842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54268[0m
+[0;32mI (2914812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2914812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60691[0m
+[0;32mI (2917792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2917792) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48551[0m
+[0;32mI (2920852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2920852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14611[0m
+[0;32mI (2923822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2923832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40938[0m
+[0;32mI (2926802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2926802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10866[0m
+[0;32mI (2929862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2929872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39967[0m
+[0;32mI (2932832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2932832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10651[0m
+[0;32mI (2935812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (2935812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24603[0m

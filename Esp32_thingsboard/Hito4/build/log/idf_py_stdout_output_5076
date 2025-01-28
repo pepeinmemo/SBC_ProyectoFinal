@@ -1,0 +1,972 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 15 2024 18:28:55[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25aa0h (154272) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00035ac8 vaddr=3ffb0000 size=03b94h ( 15252) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039664 vaddr=40080000 size=069b4h ( 27060) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1e04h (663044) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e1e2c vaddr=400869b4 size=0ffd8h ( 65496) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (439) boot: Disabling RNG early entropy source...[0m
+[0;32mI (451) cpu_start: Multicore app[0m
+[0;32mI (459) cpu_start: Pro cpu start user code[0m
+[0;32mI (459) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (459) cpu_start: Application information:[0m
+[0;32mI (462) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (467) cpu_start: App version:      1[0m
+[0;32mI (472) cpu_start: Compile time:     Oct 16 2024 16:00:22[0m
+[0;32mI (478) cpu_start: ELF file SHA256:  2a6aab917...[0m
+[0;32mI (483) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (489) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (493) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (498) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (503) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (510) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFB8260 len 00027DA0 (159 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 4009698C len 00009674 (37 KiB): IRAM[0m
+[0;32mI (543) spi_flash: detected chip: generic[0m
+[0;32mI (546) spi_flash: flash io: dio[0m
+[0;33mW (550) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (563) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (572) main_task: Started on CPU0[0m
+[0;32mI (582) main_task: Calling app_main()[0m
+[0;32mI (582) mqtt_example: [APP] Startup..[0m
+[0;32mI (582) mqtt_example: [APP] Free memory: 278372 bytes[0m
+[0;32mI (582) mqtt_example: [APP] IDF version: v5.2.2-dirty[0m
+[0;32mI (642) example_connect: Start example_connect.[0m
+[0;32mI (652) wifi:wifi driver task: 3ffbfee4, prio:23, stack:6656, core=0[0m
+[0;32mI (672) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (672) wifi:wifi certification version: v7.0[0m
+[0;32mI (672) wifi:config NVS flash: enabled[0m
+[0;32mI (672) wifi:config nano formating: disabled[0m
+[0;32mI (682) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (682) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (692) wifi:Init management short buffer num: 32[0m
+[0;32mI (692) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (702) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (702) wifi:Init static rx buffer num: 10[0m
+[0;32mI (702) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (712) wifi_init: rx ba win: 6[0m
+[0;32mI (712) wifi_init: tcpip mbox: 32[0m
+[0;32mI (712) wifi_init: udp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (732) wifi_init: tcp rx win: 5760[0m
+[0;32mI (732) wifi_init: tcp mss: 1440[0m
+[0;32mI (732) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (742) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (752) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (842) wifi:mode : sta (e4:65:b8:11:95:44)[0m
+[0;32mI (842) wifi:enable tsf[0m
+[0;32mI (842) example_connect: Connecting to Luis Cris y Alvaro...[0m
+[0;32mI (852) example_connect: Waiting for IP(s)[0m
+[0;32mI (3512) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (3512) wifi:state: init -> auth (b0)[0m
+[0;32mI (3522) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3522) wifi:state: assoc -> run (10)[0m
+[0;32mI (3562) wifi:<ba-add>idx:0 (ifx:0, d4:60:e3:2e:4b:11), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3582) wifi:connected with Luis Cris y Alvaro, aid = 8, channel 1, BW20, bssid = d4:60:e3:2e:4b:11[0m
+[0;32mI (3582) wifi:security: WPA2-PSK, phy: bgn, rssi: -56[0m
+[0;32mI (3582) wifi:pm start, type: 1[0m
+
+[0;32mI (3582) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3592) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4602) esp_netif_handlers: example_netif_sta ip: 192.168.0.32, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4602) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.32[0m
+[0;32mI (4642) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:e665:b8ff:fe11:9544, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4642) example_common: Connected to example_netif_sta[0m
+[0;32mI (4652) example_common: - IPv4 address: 192.168.0.32,[0m
+[0;32mI (4652) example_common: - IPv6 address: fe80:0000:0000:0000:e665:b8ff:fe11:9544, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4672) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (4672) mqtt_example: Other event id:7[0m
+[0;32mI (4682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (5002) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=1[0m
+[0;32mI (5002) mqtt_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (5842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (5842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46877[0m
+[0;32mI (6682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (6872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (6872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18300[0m
+[0;32mI (7682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (7892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (7892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60619[0m
+[0;32mI (8682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (8822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (8822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8993[0m
+[0;32mI (9682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (9872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (9872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64863[0m
+[0;32mI (10682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (10862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (10862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56107[0m
+[0;32mI (11682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (11932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (11932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50104[0m
+[0;32mI (12682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (12912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (12912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26759[0m
+[0;32mI (13682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (13912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (13912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28345[0m
+[0;32mI (14682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (14862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (14862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61201[0m
+[0;32mI (15682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (15892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (15892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19463[0m
+[0;32mI (16682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (17422) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (17422) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16143[0m
+[0;32mI (17682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (17972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (17972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26983[0m
+[0;32mI (18682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (18952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (18952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46505[0m
+[0;32mI (19682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (19872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (19872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27904[0m
+[0;32mI (20682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (20892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (20892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3452[0m
+[0;32mI (21682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (21922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (21922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20768[0m
+[0;32mI (22682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (22852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (22852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=796[0m
+[0;32mI (23682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (23872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (23872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6974[0m
+[0;32mI (24682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (24902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (24902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64648[0m
+[0;32mI (25682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (25812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (25812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56968[0m
+[0;32mI (26682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (26832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (26832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4625[0m
+[0;32mI (27682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (27862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (27862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55390[0m
+[0;32mI (28682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (28892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (28892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37491[0m
+[0;32mI (29682) mqtt_example: Valor del LDR: 2.063492 mV, Valor raw: 13.000000[0m
+[0;32mI (29912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (29912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39849[0m
+[0;32mI (30682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (30832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (30832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43357[0m
+[0;32mI (31682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (31852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (31852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44567[0m
+[0;32mI (32682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (32882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (32892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4567[0m
+[0;32mI (33682) mqtt_example: Valor del LDR: 232.698413 mV, Valor raw: 1466.000000[0m
+[0;32mI (33902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (33902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22652[0m
+[0;32mI (34682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (34822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (34822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36446[0m
+[0;32mI (35682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (35852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (35852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60965[0m
+[0;32mI (36682) mqtt_example: Valor del LDR: 276.031746 mV, Valor raw: 1739.000000[0m
+[0;32mI (36872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (36872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5055[0m
+[0;32mI (37682) mqtt_example: Valor del LDR: 215.873016 mV, Valor raw: 1360.000000[0m
+[0;32mI (37932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (37932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26432[0m
+[0;32mI (38682) mqtt_example: Valor del LDR: 210.476190 mV, Valor raw: 1326.000000[0m
+[0;32mI (38822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (38822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=53872[0m
+[0;32mI (39682) mqtt_example: Valor del LDR: 208.888889 mV, Valor raw: 1316.000000[0m
+[0;32mI (39952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (39952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54137[0m
+[0;32mI (40682) mqtt_example: Valor del LDR: 200.634921 mV, Valor raw: 1264.000000[0m
+[0;32mI (40862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (40862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26331[0m
+[0;32mI (41682) mqtt_example: Valor del LDR: 331.111111 mV, Valor raw: 2086.000000[0m
+[0;32mI (41992) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (41992) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44252[0m
+[0;32mI (42682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (42952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (42952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65191[0m
+[0;32mI (43682) mqtt_example: Valor del LDR: 0.317460 mV, Valor raw: 2.000000[0m
+[0;32mI (43872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (43872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59143[0m
+[0;32mI (44682) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (44892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (44892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40201[0m
+[0;32mI (45682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (46682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (47682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (48682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (49682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (50532) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (50532) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32816[0m
+[0;32mI (50682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (50702) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (50702) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=6452[0m
+[0;32mI (50702) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (50712) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22660[0m
+[0;32mI (50722) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (50722) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56357[0m
+[0;32mI (50742) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (50742) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29320[0m
+[0;32mI (50902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (50902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19074[0m
+[0;32mI (51682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (51822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (51822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9127[0m
+[0;32mI (52682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (52842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (52852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20245[0m
+[0;32mI (53682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (53872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (53872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8151[0m
+[0;32mI (54682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (54892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (54892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27683[0m
+[0;32mI (55682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (55812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (55812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17646[0m
+[0;32mI (56682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (56842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (56842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=60564[0m
+[0;32mI (57682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (57862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (57862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5385[0m
+[0;32mI (58682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (58892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (58892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31673[0m
+[0;32mI (59682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (59812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (59812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45095[0m
+[0;32mI (60682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (60852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (60852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23902[0m
+[0;32mI (61682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (61852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (61852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17046[0m
+[0;32mI (62682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (62882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (62882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19836[0m
+[0;32mI (63682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (63902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (63902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34526[0m
+[0;32mI (64682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (64932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (64932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35925[0m
+[0;32mI (65682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (65852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (65852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56828[0m
+[0;32mI (66682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (66872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (66872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47764[0m
+[0;32mI (67682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (67902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (67902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7814[0m
+[0;32mI (68682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (68922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (68922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16216[0m
+[0;32mI (69682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (69842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (69842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52000[0m
+[0;32mI (70682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (70872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (70872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32399[0m
+[0;32mI (71682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (71892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (71902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35649[0m
+[0;32mI (72682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (72822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (72822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38900[0m
+[0;32mI (73682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (73842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (73842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45059[0m
+[0;32mI (74682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (74862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (74862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43768[0m
+[0;32mI (75682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (75992) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (75992) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=942[0m
+[0;32mI (76682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (76842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (76852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52437[0m
+[0;32mI (77682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (77832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (77832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58633[0m
+[0;32mI (78682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (78852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (78852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38337[0m
+[0;32mI (79682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (79882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (79882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=42330[0m
+[0;32mI (80682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (80932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (80932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58700[0m
+[0;32mI (81682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (81822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (81822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9830[0m
+[0;32mI (82682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (82852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (82852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27039[0m
+[0;32mI (83682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (83872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (83872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64293[0m
+[0;32mI (84682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (84802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (84802) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65126[0m
+[0;32mI (85682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (85822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (85822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23694[0m
+[0;32mI (86682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (86842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (86842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65011[0m
+[0;32mI (87682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (87872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (87872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28915[0m
+[0;32mI (88682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (88902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (88902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11314[0m
+[0;32mI (89682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (89812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (89812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56084[0m
+[0;32mI (90682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (90832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (90832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28830[0m
+[0;32mI (91682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (91872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (91882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7597[0m
+[0;32mI (92682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (92882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (92882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35846[0m
+[0;32mI (93682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (93912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (93912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19763[0m
+[0;32mI (94682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (94832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (94832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40955[0m
+[0;32mI (95682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (95852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (95852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=175[0m
+[0;32mI (96682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (96982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (96982) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5185[0m
+[0;32mI (97682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (97902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (97902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27632[0m
+[0;32mI (98682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (98822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (98822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12371[0m
+[0;32mI (99682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (99842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (99852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31423[0m
+[0;32mI (100682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (100872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (100872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41030[0m
+[0;32mI (101682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (101892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (101892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13089[0m
+[0;32mI (102682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (102822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (102822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=63433[0m
+[0;32mI (103682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (103842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (103842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62043[0m
+[0;32mI (104682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (104862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (104862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26630[0m
+[0;32mI (105682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (105892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (105892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13319[0m
+[0;32mI (106682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (106812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (106812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20713[0m
+[0;32mI (107682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (107832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (107842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47840[0m
+[0;32mI (108682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (108862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (108862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57659[0m
+[0;32mI (109682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (109882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (109882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32173[0m
+[0;32mI (110682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (111112) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (111112) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10026[0m
+[0;32mI (111682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (111832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (111832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3538[0m
+[0;32mI (112682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (112952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (112962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43213[0m
+[0;32mI (113682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (113882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (113882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55922[0m
+[0;32mI (114682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (114902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (114902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43325[0m
+[0;32mI (115682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (115832) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (115832) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38505[0m
+[0;32mI (116682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (116952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (116952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49941[0m
+[0;32mI (117682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (117872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (117872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7690[0m
+[0;32mI (118682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (118892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (118892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1488[0m
+[0;32mI (119682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (119812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (119812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27196[0m
+[0;32mI (120682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (120842) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (120842) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43236[0m
+[0;32mI (121682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (121862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (121862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35836[0m
+[0;32mI (122682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (122932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (122932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33805[0m
+[0;32mI (123682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (123812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (123812) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8099[0m
+[0;32mI (124682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (124852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (124852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=41707[0m
+[0;32mI (125682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (125862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (125862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25895[0m
+[0;32mI (126682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (126912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (126912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64083[0m
+[0;32mI (127682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (127902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (127902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2174[0m
+[0;32mI (128682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (129682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (130682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (130982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (130982) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=23099[0m
+[0;32mI (131282) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (131282) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45787[0m
+[0;32mI (131292) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (131302) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12122[0m
+[0;32mI (131682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (131902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (131902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11110[0m
+[0;32mI (132682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (133142) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (133142) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24862[0m
+[0;32mI (133682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (134682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (135682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (136682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (137682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (138682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (139682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (140682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (141322) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141322) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7598[0m
+[0;32mI (141662) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141662) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32262[0m
+[0;32mI (141672) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141682) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39539[0m
+[0;32mI (141682) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (141692) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141702) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13792[0m
+[0;32mI (141712) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141722) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30418[0m
+[0;32mI (141732) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141732) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43454[0m
+[0;32mI (141742) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141742) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7289[0m
+[0;32mI (141762) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141762) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7262[0m
+[0;32mI (141972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (141972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16851[0m
+[0;32mI (142722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (142972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (142972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10098[0m
+[0;32mI (143722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (143882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (143882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10248[0m
+[0;32mI (144722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (144912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (144912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27494[0m
+[0;32mI (145722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (145932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (145932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36205[0m
+[0;32mI (146722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (146952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (146952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3149[0m
+[0;32mI (147722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (147882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (147882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19817[0m
+[0;32mI (148722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (148902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (148902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62994[0m
+[0;32mI (149722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (149952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (149952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59523[0m
+[0;32mI (150722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (150972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (150972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55949[0m
+[0;32mI (151722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (151892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (151892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45027[0m
+[0;32mI (152722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (152902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (152902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24801[0m
+[0;32mI (153722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (153952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (153952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37644[0m
+[0;32mI (154722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (154942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (154942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47169[0m
+[0;32mI (155722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (155862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (155862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9639[0m
+[0;32mI (156722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (156882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (156882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26441[0m
+[0;32mI (157722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (157912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (157912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30613[0m
+[0;32mI (158722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (158932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (158932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15651[0m
+[0;32mI (159722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (159992) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (159992) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24842[0m
+[0;32mI (160722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (161022) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (161032) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=19603[0m
+[0;32mI (161722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (161902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (161902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58875[0m
+[0;32mI (162722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (162922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (162922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22944[0m
+[0;32mI (163722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (163982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (163982) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26135[0m
+[0;32mI (164722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (164912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (164912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65329[0m
+[0;32mI (165722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (166722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (167722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (167882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (167882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=44268[0m
+[0;32mI (168042) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (168052) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29166[0m
+[0;32mI (168052) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (168062) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8920[0m
+[0;32mI (168722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (168862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (168862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=38266[0m
+[0;32mI (169722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (169892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (169892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=5587[0m
+[0;32mI (170722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (170912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (170912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=62420[0m
+[0;32mI (171722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (171942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (171942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13082[0m
+[0;32mI (172722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (172862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (172862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9174[0m
+[0;32mI (173722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (173992) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (173992) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27154[0m
+[0;32mI (174722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (174912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (174912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40866[0m
+[0;32mI (175722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (175952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (175952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39923[0m
+[0;32mI (176722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (176962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (176962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=46465[0m
+[0;32mI (177722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (178722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (179722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (180722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (181722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (182722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (183722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (183922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (183922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=59355[0m
+[0;32mI (184132) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (184132) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3203[0m
+[0;32mI (184142) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (184142) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58623[0m
+[0;32mI (184152) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (184152) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10392[0m
+[0;32mI (184172) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (184172) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11763[0m
+[0;32mI (184182) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (184182) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58196[0m
+[0;32mI (184722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (185162) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (185162) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13569[0m
+[0;32mI (185172) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (185172) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64600[0m
+[0;32mI (185722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (185872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (185872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56748[0m
+[0;32mI (186722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (186892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (186892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22294[0m
+[0;32mI (187722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (187912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (187912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=13413[0m
+[0;32mI (188722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (188932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (188942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64698[0m
+[0;32mI (189722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (189862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (189862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25814[0m
+[0;32mI (190722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (190892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (190892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26149[0m
+[0;32mI (191722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (191902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (191902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11329[0m
+[0;32mI (192722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (192932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (192932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55055[0m
+[0;32mI (193722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (193992) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (193992) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=459[0m
+[0;32mI (194722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (194982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (194982) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29780[0m
+[0;32mI (195722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (195902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (195902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31750[0m
+[0;32mI (196722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (196932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (196932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=286[0m
+[0;32mI (197722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (197952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (197952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47803[0m
+[0;32mI (198722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (198872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (198872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=156[0m
+[0;32mI (199722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (199892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (199892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11182[0m
+[0;32mI (200722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (200922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (200922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36240[0m
+[0;32mI (201722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (201972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (201972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56653[0m
+[0;32mI (202722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (203202) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (203202) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=47790[0m
+[0;32mI (203722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (203912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (203922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1223[0m
+[0;32mI (204722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (204912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (204912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8110[0m
+[0;32mI (205722) mqtt_example: Valor del LDR: 0.476190 mV, Valor raw: 3.000000[0m
+[0;32mI (205982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (205982) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7570[0m
+[0;32mI (206722) mqtt_example: Valor del LDR: 0.952381 mV, Valor raw: 6.000000[0m
+[0;32mI (207722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (208722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (209422) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (209422) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=27018[0m
+[0;32mI (209622) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (209622) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33020[0m
+[0;32mI (209632) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (209632) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15797[0m
+[0;32mI (209722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (209932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (209932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61504[0m
+[0;32mI (210722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (211002) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (211002) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14547[0m
+[0;32mI (211722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (211902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (211902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15291[0m
+[0;32mI (212722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (213722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (214722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (215722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (216722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (217722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (218722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (218972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (218972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36162[0m
+[0;32mI (219722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (220722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (221722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (222722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (223722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (224722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (225722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (226722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (227722) mqtt_example: Valor del LDR: 0.634921 mV, Valor raw: 4.000000[0m
+[0;32mI (228722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (229722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (230722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (231722) mqtt_example: Valor del LDR: 251.904762 mV, Valor raw: 1587.000000[0m
+[0;32mI (232722) mqtt_example: Valor del LDR: 152.222222 mV, Valor raw: 959.000000[0m
+[0;32mI (233722) mqtt_example: Valor del LDR: 263.650794 mV, Valor raw: 1661.000000[0m
+[0;32mI (234722) mqtt_example: Valor del LDR: 3.015873 mV, Valor raw: 19.000000[0m
+[0;32mI (235722) mqtt_example: Valor del LDR: 2.539683 mV, Valor raw: 16.000000[0m
+[0;32mI (236652) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (236652) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15220[0m
+[0;32mI (236662) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (236672) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37106[0m
+[0;32mI (236722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (236882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (236882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57597[0m
+[0;32mI (236892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (236892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=26667[0m
+[0;32mI (236902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (236902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2596[0m
+[0;32mI (236912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (236922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4437[0m
+[0;31mE (236932) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (236932) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (236942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (236952) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (236962) mqtt_example: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (236962) mqtt_example: Last errno string (Success)[0m
+[0;31mE (236972) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (236982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (236982) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (237722) mqtt_example: Valor del LDR: 2.380952 mV, Valor raw: 15.000000[0m
+[0;32mI (238722) mqtt_example: Valor del LDR: 0.476190 mV, Valor raw: 3.000000[0m
+[0;32mI (239722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (240722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (241722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (242722) mqtt_example: Valor del LDR: 9.047619 mV, Valor raw: 57.000000[0m
+[0;32mI (243722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (244722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (245722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (246722) mqtt_example: Valor del LDR: 2.539683 mV, Valor raw: 16.000000[0m
+[0;32mI (246992) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (246992) mqtt_example: Other event id:7[0m
+[0;32mI (247722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (248722) mqtt_example: Valor del LDR: 2.063492 mV, Valor raw: 13.000000[0m
+[0;32mI (248742) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=1[0m
+[0;32mI (248742) mqtt_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (249722) mqtt_example: Valor del LDR: 0.476190 mV, Valor raw: 3.000000[0m
+[0;32mI (249862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (249862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=4467[0m
+[0;32mI (250072) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (250072) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=51524[0m
+[0;32mI (250722) mqtt_example: Valor del LDR: 0.476190 mV, Valor raw: 3.000000[0m
+[0;32mI (250892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (250892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=45925[0m
+[0;32mI (251092) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (251092) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3560[0m
+[0;32mI (251722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (251922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (251922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=28720[0m
+[0;32mI (252122) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (252122) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15922[0m
+[0;32mI (252722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (252942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (252942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=37024[0m
+[0;32mI (253142) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (253142) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14443[0m
+[0;32mI (253722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (253862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (253862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10369[0m
+[0;32mI (254722) mqtt_example: Valor del LDR: 0.000000 mV, Valor raw: 0.000000[0m
+[0;32mI (254882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (254882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=7595[0m
+[0;32mI (255092) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (255092) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=61159[0m
+[0;32mI (255722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (255912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (255912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=54172[0m
+[0;32mI (256112) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (256112) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=12708[0m
+[0;32mI (256722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (256932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (256932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=64653[0m
+[0;32mI (257142) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (257142) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17646[0m
+[0;32mI (257722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (257882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (257882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=33382[0m
+[0;32mI (258722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (258882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (258882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=21983[0m
+[0;32mI (259082) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (259082) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20989[0m
+[0;32mI (259722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (259902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (259902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11982[0m
+[0;32mI (260112) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (260112) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43349[0m
+[0;32mI (260722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (260922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (260922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=628[0m
+[0;32mI (261132) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (261132) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=17891[0m
+[0;32mI (261722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (261952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (261952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=14595[0m
+[0;32mI (262152) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (262152) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=57637[0m
+[0;32mI (262722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (263722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (264722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (264822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (264822) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=48689[0m
+[0;32mI (265032) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (265032) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56325[0m
+[0;32mI (265032) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (265042) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=18681[0m
+[0;32mI (265722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (265962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (265962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=541[0m
+[0;32mI (266152) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (266152) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52591[0m
+[0;32mI (266722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (266882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (266882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=8237[0m
+[0;32mI (267722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (267922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (267932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=35088[0m
+[0;32mI (268722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (268912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (268912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=36120[0m
+[0;32mI (269722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (269992) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (269992) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=11965[0m
+[0;32mI (270722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (271012) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (271012) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=16485[0m
+[0;32mI (271722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (271882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (271882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20160[0m
+[0;32mI (272722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (272912) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (272912) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=15432[0m
+[0;32mI (273722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (273932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (273932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40934[0m
+[0;32mI (274722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (274852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (274852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58500[0m
+[0;32mI (275722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (275882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (275882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56452[0m
+[0;32mI (276722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (276902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (276902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=55492[0m
+[0;32mI (277722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (277962) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (277962) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=344[0m
+[0;32mI (278722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (278952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (278952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50307[0m
+[0;32mI (279722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (279872) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (279872) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=20213[0m
+[0;32mI (280722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (280892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (280892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52287[0m
+[0;32mI (281722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (281922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (281922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=50054[0m
+[0;32mI (282722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (282942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (282942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=2921[0m
+[0;32mI (283722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (283862) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (283862) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=78[0m
+[0;32mI (284722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (284892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (284892) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=378[0m
+[0;32mI (285722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (286372) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (286372) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32093[0m
+[0;32mI (286722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (286932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (286932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58157[0m
+[0;32mI (287722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (287852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (287852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=52775[0m
+[0;32mI (288722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (288882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (288882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=32952[0m
+[0;32mI (289722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (289922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (289922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=3058[0m
+[0;32mI (290722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (290932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (290932) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=10939[0m
+[0;32mI (291722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (291952) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (291952) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=30331[0m
+[0;32mI (292722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (292882) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (292882) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58499[0m
+[0;32mI (293722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (293902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (293902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=56679[0m
+[0;32mI (294722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (294922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (294922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=65424[0m
+[0;32mI (295722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (295942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (295942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=43151[0m
+[0;32mI (296722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (296972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (296972) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24653[0m
+[0;32mI (297722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (297892) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (297902) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=29843[0m
+[0;32mI (298722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (298922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (298922) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34881[0m
+[0;32mI (299722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m
+[0;32mI (299942) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (299942) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=40863[0m
+[0;32mI (300722) mqtt_example: Valor del LDR: 650.000000 mV, Valor raw: 4095.000000[0m

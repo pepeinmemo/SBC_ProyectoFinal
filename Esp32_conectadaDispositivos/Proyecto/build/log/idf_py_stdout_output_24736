@@ -1,0 +1,2321 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan 21 2025 18:36:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 storage          Unknown data     01 82 00210000 00100000[0m
+[0;32mI (100) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26114h (155924) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=0003613c vaddr=3ffbdb60 size=059a8h ( 22952) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003baec vaddr=40080000 size=0452ch ( 17708) load[0m
+[0;32mI (182) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b867ch (755324) map[0m
+[0;32mI (441) esp_image: segment 4: paddr=000f86a4 vaddr=4008452c size=19350h (103248) load[0m
+[0;32mI (497) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (497) boot: Disabling RNG early entropy source...[0m
+[0;32mI (508) cpu_start: Multicore app[0m
+[0;32mI (517) cpu_start: Pro cpu start user code[0m
+[0;32mI (517) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (517) cpu_start: Application information:[0m
+[0;32mI (520) cpu_start: Project name:     wifi_softAP[0m
+[0;32mI (526) cpu_start: App version:      1[0m
+[0;32mI (530) cpu_start: Compile time:     Jan 21 2025 18:35:27[0m
+[0;32mI (536) cpu_start: ELF file SHA256:  48ac4180d...[0m
+[0;32mI (541) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (547) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (551) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (556) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (561) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (568) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (587) heap_init: At 3FFC9718 len 000168E8 (90 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 4009D87C len 00002784 (9 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;32mI (621) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (626) main_task: Started on CPU0[0m
+[0;32mI (636) main_task: Calling app_main()[0m
+[0;32mI (636) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (686) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (696) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (706) gpio: GPIO[35]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (716) gpio: io_num=35 can only be input[0m
+[0;32mI (766) Control: ESP_WIFI_MODE_AP[0m
+[0;32mI (786) wifi:wifi driver task: 3ffcd6a0, prio:23, stack:6656, core=0[0m
+[0;32mI (806) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (806) wifi:wifi certification version: v7.0[0m
+[0;32mI (806) wifi:config NVS flash: enabled[0m
+[0;32mI (806) wifi:config nano formating: disabled[0m
+[0;32mI (816) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (826) wifi:Init management short buffer num: 32[0m
+[0;32mI (826) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (836) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (836) wifi:Init static rx buffer num: 10[0m
+[0;32mI (836) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (846) wifi_init: rx ba win: 6[0m
+[0;32mI (846) wifi_init: tcpip mbox: 32[0m
+[0;32mI (846) wifi_init: udp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp tx win: 5760[0m
+[0;32mI (866) wifi_init: tcp rx win: 5760[0m
+[0;32mI (866) wifi_init: tcp mss: 1440[0m
+[0;32mI (866) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (876) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (886) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (976) wifi:mode : softAP (e4:65:b8:11:95:45)[0m
+[0;32mI (1086) wifi:Total power save buffer number: 16[0m
+[0;32mI (1086) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1086) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1096) Control: wifi_init_softap finished. SSID:Grupo13 password:agarramelaquemecrece channel:1[0m
+[0;32mI (1096) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1116) Control: Servidor web iniciado[0m
+[0;32mI (1116) BTDM_INIT: BT controller compile version [4012cfb][0m
+[0;32mI (1126) BTDM_INIT: Bluetooth MAC: e4:65:b8:11:95:46[0m
+[0;32mI (1406) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1416) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1416) NimBLE: disc_mode=2[0m
+[0;32mI (1416) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1426) NimBLE: 
+[0m
+[0;32mI (17836) GAP: BLE GAP EVENT CONNECT OK![0m
+[0;32mI (25646) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (25646) wifi:station: b2:ab:a0:18:98:c1 join, AID=1, bgn, 40U[0m
+[0;32mI (26716) Control: station b2:ab:a0:18:98:c1 join, AID=1[0m
+
+
+
+
+
+[0;32mI (26846) Control: Acceso correcto[0m
+[0;32mI (26876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (26956) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (27096) wifi:<ba-add>idx:2 (ifx:1, b2:ab:a0:18:98:c1), tid:0, ssn:16, winSize:64[0m
+[0;32mI (27176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (27476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (27776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (28076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (28376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (28676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (28976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (29276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (29576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (29876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (30176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (30476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (30776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (31076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (31376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (31676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (31976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (32276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (32576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (32876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;33mW (32886) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (32886) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (33176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (33476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (33776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (34076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (34376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (34676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (34976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (35276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (35576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (35876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (36176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (36476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (36776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (37076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (37376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (37676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (37976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (38276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (38576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (38876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (39176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (39476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (39776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (40076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (40376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (40676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (40976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (41276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (41576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (41876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (42176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (42476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (42776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (43076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (43376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (43676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (43976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (44276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (44576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (44836) Control: Acción: Desbloquear[0m
+[0;32mI (44876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (45176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (45476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (45776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (46076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (46376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (46676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (46976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (47276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (47576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (47876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (48176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (48476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (48776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (49076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (49376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (49676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (49976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (50276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (50576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (50876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (51086) Control: Acción: Bloquear[0m
+[0;32mI (51176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (51476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (51776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (52076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (52376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (52676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (52976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (53276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (53576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (53876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (54176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (54476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (54776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (55076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (55376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (55676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (55976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;33mW (56106) wifi:[ADDBA]rx delba, code:1, delete tid:0[0m
+[0;32mI (56276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (56576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (56876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (57176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (57476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (57776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (58076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (58376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (58676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (58976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (59276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (59576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (59876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (60176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (60476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (60776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (60946) Control: Acción: Desbloquear[0m
+[0;32mI (61076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (61376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (61676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (61976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (62276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (62576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (62876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (63176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (63476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (63776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (64076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (64376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (64676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (64976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (65276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (65576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (65876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (66176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (66476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (66776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (67076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (67376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (67676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (67976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (68276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (68576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (68876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (69176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (69476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (69776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (70076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (70376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (70676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (70976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (71276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (71576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (71876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (72176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (72476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (72776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (73076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (73376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (73676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (73976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (74276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (74576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (74876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (75176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (75476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (75776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (76076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (76376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (76676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (76976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (77276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (77576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (77876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (78176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (78476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (78776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (79076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (79376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (79676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (79976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (80276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (80576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (80876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (81176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (81476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (81776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (82076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (82376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (82676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (82976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (83276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (83576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (83876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (84176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (84476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (84776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (85076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (85376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (85676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (85976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (86276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (86576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (86876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (87176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (87476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (87776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (88076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (88376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (88676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (88976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (89276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (89576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (89876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (90176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (90476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (90776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (91076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (91376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (91676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (91976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (92276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (92576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (92876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (93176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (93476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (93776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (94076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (94376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (94676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (94976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (95276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (95576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (95876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (96176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (96476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (96776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (97076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (97376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (97676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (97976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (98006) Control: Acción: Desbloquear[0m
+[0;32mI (98276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (98576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (98876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (99176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (99476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (99776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (100076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (100376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (100676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (100976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (101276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (101576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (101876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (101916) Control: Acción: Cerrar[0m
+[0;32mI (102176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (102476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (102776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (103076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (103376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (103676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (103976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (104276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (104576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (104876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (105176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (105476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (105776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (106076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (106376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (106676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (106976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (107276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (107576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (107876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (108176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (108476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (108776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (109076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (109376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (109676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (109976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (110276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (110576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (110876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (111176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (111476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (111776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (112076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (112376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (112676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (112976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (113276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (113526) Control: Acción: Abrir[0m
+[0;32mI (113576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (113876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (114176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (114476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (114776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (115076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (115376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (115676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (115976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (116276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (116576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (116576) Control: Acción: Cerrar[0m
+[0;32mI (116876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (117176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (117476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (117776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (118076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (118376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (118676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (118976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (119276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (119576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (119876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (120176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (120476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (120776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (121076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (121376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (121676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (121976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (122276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (122576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (122876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (123176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (123476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (123776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (124076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (124376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (124676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (124976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (125276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (125576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (125876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (126176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (126476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (126776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (127076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (127376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (127676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (127976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (128276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (128576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (128876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (129176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (129476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (129776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (130076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (130376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (130676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (130976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (131276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (131576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (131876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (132176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (132476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (132776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (133076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (133376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (133676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (133976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (134276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (134576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (134876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (135176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (135476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (135776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (136076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (136376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (136676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (136976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (137276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (137576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (137876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (138176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (138476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (138776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (139076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (139376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (139676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (139976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (140276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (140576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (140876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (141176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (141476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (141776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (142076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (142376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (142676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (142976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (143276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (143576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (143876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (144176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (144476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (144776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (145076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (145376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (145676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (145976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (146276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (146576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (146876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (147176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (147476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (147776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (148076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (148376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (148676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (148976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (149276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (149576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (149876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (150176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (150476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (150776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (151076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (151376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (151676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (151976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (152276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (152576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (152876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (153176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (153476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (153776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (154076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (154376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (154676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (154976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (155276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (155576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (155876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (156176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (156476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (156776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (157076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (157376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (157676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (157976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (158276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (158576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (158876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (159176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (159476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (159776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (160076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (160376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (160676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (160976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (161276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (161576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (161876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (162176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (162476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (162776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (163076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (163376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (163676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (163976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (164046) wifi:station: b2:ab:a0:18:98:c1 leave, AID = 1, bss_flags is 9014355, bss:0x3ffdf554[0m
+[0;32mI (164056) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (164056) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (164056) Control: station b2:ab:a0:18:98:c1 leave, AID=1[0m
+
+
+
+
+
+[0;32mI (164196) Control: Cliente desconectado[0m
+[0;32mI (184986) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (184986) wifi:station: b2:ab:a0:18:98:c1 join, AID=1, bgn, 40U[0m
+[0;32mI (185026) Control: station b2:ab:a0:18:98:c1 join, AID=1[0m
+
+
+
+
+
+[0;32mI (185156) Control: Acceso correcto[0m
+[0;32mI (185246) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (185276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (185436) wifi:<ba-add>idx:2 (ifx:1, b2:ab:a0:18:98:c1), tid:0, ssn:16, winSize:64[0m
+[0;32mI (185576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (185876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (186176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (186476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (186776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (187076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (187376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (187676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (187976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (188276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (188576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (188876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (189176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (189476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (189776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (190076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (190376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (190676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (190976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (191276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (191576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (191876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (192176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (192476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (192776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (193076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (193376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (193676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (193976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (194276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (194576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (194876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (194976) Control: Acción: Abrir[0m
+[0;32mI (195176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (195476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (195776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (196076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (196376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (196676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (196976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (197276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (197576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (197876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (198176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (198476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (198776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (199076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (199376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (199676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (199976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (200276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (200576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (200876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (201176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (201476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (201776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (202076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (202376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (202676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (202976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (203276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (203576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (203876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (204176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (204476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (204776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (205076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (205376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (205676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (205976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (206276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (206576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (206876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (207176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (207476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (207776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (208076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (208376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (208676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (208976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (209276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (209576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (209876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (210176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (210476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (210776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (211076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (211376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (211676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (211976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (212276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (212576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (212876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (213176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (213476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (213776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (214076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (214376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (214676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (214976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (215276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (215576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (215876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (216176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (216476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (216776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (217076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (217376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (217676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (217976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (218276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (218576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (218876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (219176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (219476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (219776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (220076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (220376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (220676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (220976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (221276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (221576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (221876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (222176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (222476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (222776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (223076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (223376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (223676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (223976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (224276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (224576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (224876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (225176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (225476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (225776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (226076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (226376) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (226676) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (226976) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (227276) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (227576) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (227876) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (228176) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (228476) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (228776) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (229076) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (229306) Control: Acción: Cerrar[0m
+[0;32mI (229376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (229676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (229976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (230276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (230576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (230876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (231176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (231476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (231776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (232076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (232376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (232676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (232976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (233276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (233576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (233876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (234176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (234476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (234776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (235076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (235376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (235676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (235976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (236276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (236576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (236876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (237176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (237476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (237776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (238076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (238376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (238676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (238976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (239276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (239576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (239626) Control: Acción: Bloquear[0m
+[0;31mE (239636) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (239876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (240176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (240476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (240776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (241076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (241376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (241676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (241976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (242276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (242576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (242876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (243176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (243476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (243776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (244076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (244376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (244676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (244976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (245276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (245576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (245876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (246176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (246476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (246776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (247076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (247376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (247676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (247976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (248276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (248576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (248876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (249176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (249476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (249776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (250076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (250376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (250676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (250976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (251276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (251576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (251876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (252176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (252476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (252776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (253076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (253376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (253676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (253976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (254276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (254576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (254876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (255176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (255476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (255776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (256076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (256376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (256676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (256976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (257276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (257576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (257876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (258176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (258476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (258776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (259076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (259376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (259676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (259976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (260276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (260576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (260876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (261176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (261476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (261776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (262076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (262376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (262676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (262976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (263276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (263576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (263876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (264176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (264476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (264776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (265076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (265376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (265676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (265976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (266276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (266576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (266876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (267176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (267476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (267776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (268076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (268376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (268676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (268976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (269276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (269576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (269876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (270176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (270476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (270776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (271076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (271376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (271676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (271976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (272276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (272576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (272876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (272976) Control: Acción: Abrir[0m
+[0;32mI (273176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (273476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (273776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (274076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (274376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (274676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (274976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (275276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (275576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (275876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (276176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (276476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (276776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (277076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (277146) Control: Acción: Desbloquear[0m
+[0;31mE (277156) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (277376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (277676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (277976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (278276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (278576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (278876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (279176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (279476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (279776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (280076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (280376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (280676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (280976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (281276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (281576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (281876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (282176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (282476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (282776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (283076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (283376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (283676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (283976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (284276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (284576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (284876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (285176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (285476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (285776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (286076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (286376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (286676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (286976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (287276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (287576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (287876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (288176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (288476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (288776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (289076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (289376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (289676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (289976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (290276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (290576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (290876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (291176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (291476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (291776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (292076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (292376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (292676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (292976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (293276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (293576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (293876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (294176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (294476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (294776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (295076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (295376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (295676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (295976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (296276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (296576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (296876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (297176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (297476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (297776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (298076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (298376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (298676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (298976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (299276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (299576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (299876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (300176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (300476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (300776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (301076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (301376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (301676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (301976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (302276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (302576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (302876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (303176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (303476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (303776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (304076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (304376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (304676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (304976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (305276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (305576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (305876) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (306176) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (306476) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (306776) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (307076) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (307376) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (307676) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (307976) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (308276) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (308576) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (308796) Control: Acción: Bloquear[0m
+[0;31mE (308806) gpio�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Jan 21 2025 18:36:16[0m
+[0;32mI (61) boot: Multicore bootloader[0m
+[0;32mI (66) boot: chip revision: v3.1[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (84) boot: Enabling RNG early entropy source...[0m
+[0;32mI (89) boot: Partition Table:[0m
+[0;32mI (93) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (100) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (108) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (115) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (123) boot:  3 storage          Unknown data     01 82 00210000 00100000[0m
+[0;32mI (130) boot: End of partition table[0m
+[0;32mI (135) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26114h (155924) map[0m
+[0;32mI (197) esp_image: segment 1: paddr=0003613c vaddr=3ffbdb60 size=059a8h ( 22952) load[0m
+[0;32mI (205) esp_image: segment 2: paddr=0003baec vaddr=40080000 size=0452ch ( 17708) load[0m
+[0;32mI (213) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b867ch (755324) map[0m
+[0;32mI (472) esp_image: segment 4: paddr=000f86a4 vaddr=4008452c size=19350h (103248) load[0m
+[0;32mI (528) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (528) boot: Disabling RNG early entropy source...[0m
+[0;32mI (539) cpu_start: Multicore app[0m
+[0;32mI (548) cpu_start: Pro cpu start user code[0m
+[0;32mI (548) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (548) cpu_start: Application information:[0m
+[0;32mI (551) cpu_start: Project name:     wifi_softAP[0m
+[0;32mI (556) cpu_start: App version:      1[0m
+[0;32mI (561) cpu_start: Compile time:     Jan 21 2025 18:35:27[0m
+[0;32mI (567) cpu_start: ELF file SHA256:  48ac4180d...[0m
+[0;32mI (572) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (578) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (582) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (587) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (592) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (599) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (605) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (611) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (617) heap_init: At 3FFC9718 len 000168E8 (90 KiB): DRAM[0m
+[0;32mI (624) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (630) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (636) heap_init: At 4009D87C len 00002784 (9 KiB): IRAM[0m
+[0;32mI (644) spi_flash: detected chip: generic[0m
+[0;32mI (647) spi_flash: flash io: dio[0m
+[0;32mI (652) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (657) main_task: Started on CPU0[0m
+[0;32mI (667) main_task: Calling app_main()[0m
+[0;32mI (667) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (727) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (737) gpio: GPIO[35]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (747) gpio: io_num=35 can only be input[0m
+[0;32mI (797) Control: ESP_WIFI_MODE_AP[0m
+[0;32mI (817) wifi:wifi driver task: 3ffcd6a0, prio:23, stack:6656, core=0[0m
+[0;32mI (837) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (837) wifi:wifi certification version: v7.0[0m
+[0;32mI (837) wifi:config NVS flash: enabled[0m
+[0;32mI (837) wifi:config nano formating: disabled[0m
+[0;32mI (847) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (847) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (857) wifi:Init management short buffer num: 32[0m
+[0;32mI (857) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (867) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (867) wifi:Init static rx buffer num: 10[0m
+[0;32mI (867) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (877) wifi_init: rx ba win: 6[0m
+[0;32mI (877) wifi_init: tcpip mbox: 32[0m
+[0;32mI (877) wifi_init: udp mbox: 6[0m
+[0;32mI (887) wifi_init: tcp mbox: 6[0m
+[0;32mI (887) wifi_init: tcp tx win: 5760[0m
+[0;32mI (897) wifi_init: tcp rx win: 5760[0m
+[0;32mI (897) wifi_init: tcp mss: 1440[0m
+[0;32mI (897) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (907) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (917) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1007) wifi:mode : softAP (e4:65:b8:11:95:45)[0m
+[0;32mI (1117) wifi:Total power save buffer number: 16[0m
+[0;32mI (1117) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1127) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1127) Control: wifi_init_softap finished. SSID:Grupo13 password:agarramelaquemecrece channel:1[0m
+[0;32mI (1127) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1147) Control: Servidor web iniciado[0m
+[0;32mI (1147) BTDM_INIT: BT controller compile version [4012cfb][0m
+[0;32mI (1157) BTDM_INIT: Bluetooth MAC: e4:65:b8:11:95:46[0m
+[0;32mI (1427) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1427) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1427) NimBLE: disc_mode=2[0m
+[0;32mI (1427) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1437) NimBLE: 
+[0m
+[0;32mI (5737) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (5737) wifi:station: b2:ab:a0:18:98:c1 join, AID=1, bgn, 40U[0m
+[0;32mI (5737) wifi:station: b2:ab:a0:18:98:c1 leave, AID = 1, bss_flags is 232546, bss:0x3ffdf554[0m
+[0;32mI (5747) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (6697) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (6697) wifi:station: b2:ab:a0:18:98:c1 join, AID=1, bgn, 40U[0m
+[0;32mI (7727) Control: station b2:ab:a0:18:98:c1 join, AID=1[0m
+
+
+
+
+
+[0;32mI (7867) Control: Acceso correcto[0m
+[0;32mI (7997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (8297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (8597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (8797) wifi:<ba-add>idx:2 (ifx:1, b2:ab:a0:18:98:c1), tid:0, ssn:16, winSize:64[0m
+[0;32mI (8897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (9197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (9497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (9797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (10097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (10397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (10697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (10997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (11297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (11597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (11897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (12197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (12497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (12797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (13097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (13397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (13697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (13997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (14297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (14597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (14897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (15197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (15497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (15797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (16097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (16397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (16697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (16997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (17297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (17597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (17897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (18197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (18497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (18797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (19097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (19397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (19697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (19997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (20297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (20597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (20897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (21197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (21497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (21797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (22097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (22397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (22697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (22997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (23297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (23597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (23897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (24197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (24497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (24797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (25097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (25397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (25697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (25997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (26297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (26597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (26897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (27197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (27497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (27797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (28097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (28397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (28697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (28997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (29297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (29597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (29897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (30197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (30497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (30797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (31097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (31397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (31697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (31997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (32297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (32597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (32897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (33197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (33497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (33797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (34097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (34397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (34697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (34997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (35297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (35597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (35897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (36197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (36497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (36797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (37097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (37397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (37697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (37997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (38297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (38597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (38897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (39197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (39497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (39797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (40097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (40397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (40697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (40997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (41297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (41597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (41897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (42197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (42497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (42797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (43097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (43397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (43697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (43997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (44297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (44597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (44897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (45197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (45497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (45797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (46097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (46397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (46697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (46997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (47297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (47597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (47897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (48197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (48497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (48797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (49097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (49397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (49697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (49997) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (50297) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (50597) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (50897) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (51197) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (51497) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (51797) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (52097) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (52397) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (52697) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0

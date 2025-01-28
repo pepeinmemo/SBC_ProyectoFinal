@@ -1,0 +1,578 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 15 2024 18:28:55[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=252b4h (152244) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000352dc vaddr=3ffb0000 size=03b94h ( 15252) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00038e78 vaddr=40080000 size=071a0h ( 29088) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0f4ch (659276) map[0m
+[0;32mI (401) esp_image: segment 4: paddr=000e0f74 vaddr=400871a0 size=0f7ech ( 63468) load[0m
+[0;32mI (437) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (437) boot: Disabling RNG early entropy source...[0m
+[0;32mI (449) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (458) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Oct 16 2024 16:00:22[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  9e6413546...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (487) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB8258 len 00027DA8 (159 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 4009698C len 00009674 (37 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (572) mqtt_example: [APP] Startup..[0m
+[0;32mI (572) mqtt_example: [APP] Free memory: 278380 bytes[0m
+[0;32mI (572) mqtt_example: [APP] IDF version: v5.2.2-dirty[0m
+[0;32mI (632) example_connect: Start example_connect.[0m
+[0;32mI (642) wifi:wifi driver task: 3ffbfedc, prio:23, stack:6656, core=0[0m
+[0;32mI (662) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (662) wifi:wifi certification version: v7.0[0m
+[0;32mI (662) wifi:config NVS flash: enabled[0m
+[0;32mI (662) wifi:config nano formating: disabled[0m
+[0;32mI (672) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (672) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (682) wifi:Init management short buffer num: 32[0m
+[0;32mI (682) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (682) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (692) wifi:Init static rx buffer num: 10[0m
+[0;32mI (692) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (742) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (832) wifi:mode : sta (e4:65:b8:11:95:44)[0m
+[0;32mI (832) wifi:enable tsf[0m
+[0;32mI (832) example_connect: Connecting to Luis Cris y Alvaro...[0m
+[0;32mI (842) example_connect: Waiting for IP(s)[0m
+[0;32mI (3502) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1[0m
+[0;32mI (3502) wifi:state: init -> auth (b0)[0m
+[0;32mI (3512) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3522) wifi:state: assoc -> run (10)[0m
+[0;32mI (3532) wifi:<ba-add>idx:0 (ifx:0, d4:60:e3:2e:4b:11), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3562) wifi:connected with Luis Cris y Alvaro, aid = 8, channel 13, BW20, bssid = d4:60:e3:2e:4b:11[0m
+[0;32mI (3562) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (3572) wifi:pm start, type: 1[0m
+
+[0;32mI (3572) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3612) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4582) esp_netif_handlers: example_netif_sta ip: 192.168.0.23, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4582) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.23[0m
+[0;32mI (4632) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:e665:b8ff:fe11:9544, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4632) example_common: Connected to example_netif_sta[0m
+[0;32mI (4642) example_common: - IPv4 address: 192.168.0.23,[0m
+[0;32mI (4642) example_common: - IPv6 address: fe80:0000:0000:0000:e665:b8ff:fe11:9544, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4652) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (4662) mqtt_example: Other event id:7[0m
+[0;33mW (4972) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (4972) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (4972) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (4982) mqtt_client: MQTT connect failed[0m
+[0;32mI (4982) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (4992) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (9652) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (9652) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (9652) task_wdt: Tasks currently running:[0m
+[0;31mE (9652) task_wdt: CPU 0: main[0m
+[0;31mE (9652) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (9652) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (14652) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (14652) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (14652) task_wdt: Tasks currently running:[0m
+[0;31mE (14652) task_wdt: CPU 0: main[0m
+[0;31mE (14652) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (14652) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D7206:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (15002) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (15002) mqtt_example: Other event id:7[0m
+[0;33mW (15392) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (15402) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (15402) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (15402) mqtt_client: MQTT connect failed[0m
+[0;32mI (15412) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (15422) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 15 2024 18:28:55[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=252b4h (152244) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000352dc vaddr=3ffb0000 size=03b94h ( 15252) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00038e78 vaddr=40080000 size=071a0h ( 29088) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0f4ch (659276) map[0m
+[0;32mI (401) esp_image: segment 4: paddr=000e0f74 vaddr=400871a0 size=0f7ech ( 63468) load[0m
+[0;32mI (437) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (437) boot: Disabling RNG early entropy source...[0m
+[0;32mI (449) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (458) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Oct 16 2024 16:00:22[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  9e6413546...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (487) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB8258 len 00027DA8 (159 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 4009698C len 00009674 (37 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (572) mqtt_example: [APP] Startup..[0m
+[0;32mI (572) mqtt_example: [APP] Free memory: 278380 bytes[0m
+[0;32mI (572) mqtt_example: [APP] IDF version: v5.2.2-dirty[0m
+[0;32mI (632) example_connect: Start example_connect.[0m
+[0;32mI (642) wifi:wifi driver task: 3ffbfedc, prio:23, stack:6656, core=0[0m
+[0;32mI (662) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (662) wifi:wifi certification version: v7.0[0m
+[0;32mI (662) wifi:config NVS flash: enabled[0m
+[0;32mI (662) wifi:config nano formating: disabled[0m
+[0;32mI (672) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (672) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (682) wifi:Init management short buffer num: 32[0m
+[0;32mI (682) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (682) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (692) wifi:Init static rx buffer num: 10[0m
+[0;32mI (692) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (742) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (832) wifi:mode : sta (e4:65:b8:11:95:44)[0m
+[0;32mI (832) wifi:enable tsf[0m
+[0;32mI (832) example_connect: Connecting to Luis Cris y Alvaro...[0m
+[0;32mI (842) example_connect: Waiting for IP(s)[0m
+[0;32mI (3502) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1[0m
+[0;32mI (3502) wifi:state: init -> auth (b0)[0m
+[0;32mI (3512) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3512) wifi:state: assoc -> run (10)[0m
+[0;32mI (3532) wifi:<ba-add>idx:0 (ifx:0, d4:60:e3:2e:4b:11), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3552) wifi:connected with Luis Cris y Alvaro, aid = 8, channel 13, BW20, bssid = d4:60:e3:2e:4b:11[0m
+[0;32mI (3552) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (3552) wifi:pm start, type: 1[0m
+
+[0;32mI (3562) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3582) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4572) esp_netif_handlers: example_netif_sta ip: 192.168.0.23, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4572) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.23[0m
+[0;32mI (4632) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:e665:b8ff:fe11:9544, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4632) example_common: Connected to example_netif_sta[0m
+[0;32mI (4642) example_common: - IPv4 address: 192.168.0.23,[0m
+[0;32mI (4642) example_common: - IPv6 address: fe80:0000:0000:0000:e665:b8ff:fe11:9544, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4662) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (4662) mqtt_example: Other event id:7[0m
+[0;33mW (5022) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (5022) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (5022) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (5032) mqtt_client: MQTT connect failed[0m
+[0;32mI (5032) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (5042) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (9632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (9632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (9632) task_wdt: Tasks currently running:[0m
+[0;31mE (9632) task_wdt: CPU 0: wifi[0m
+[0;31mE (9632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (9632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x4000BFED:0x3FFBFBE0 0x40089FC3:0x3FFBFBF0 0x40089A88:0x3FFBFC10 0x40082940:0x3FFBFC50 0x40082A29:0x3FFBFC80 0x40128999:0x3FFBFCA0 0x4016EAA9:0x3FFBFCC0 0x40090799:0x3FFBFCE0 0x4009409A:0x3FFBFD00 0x4016BEE4:0x3FFBFD30 0x4016BF41:0x3FFBFD70 0x400918B7:0x3FFBFD90 0x40091B43:0x3FFBFDB0 0x4008FBB2:0x3FFBFDD0 0x40092585:0x3FFBFE20 0x40089C21:0x3FFBFE50
+
+[0;31mE (14632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (14632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (14632) task_wdt: Tasks currently running:[0m
+[0;31mE (14632) task_wdt: CPU 0: main[0m
+[0;31mE (14632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (14632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (15052) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (15052) mqtt_example: Other event id:7[0m
+[0;33mW (15462) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (15462) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (15472) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (15472) mqtt_client: MQTT connect failed[0m
+[0;32mI (15482) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (15492) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (19632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (19632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (19632) task_wdt: Tasks currently running:[0m
+[0;31mE (19632) task_wdt: CPU 0: main[0m
+[0;31mE (19632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (19632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (24632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (24632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (24632) task_wdt: Tasks currently running:[0m
+[0;31mE (24632) task_wdt: CPU 0: main[0m
+[0;31mE (24632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (24632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (25492) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (25492) mqtt_example: Other event id:7[0m
+[0;33mW (26012) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (26012) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (26022) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (26022) mqtt_client: MQTT connect failed[0m
+[0;32mI (26032) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (26032) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (29632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (29632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (29632) task_wdt: Tasks currently running:[0m
+[0;31mE (29632) task_wdt: CPU 0: main[0m
+[0;31mE (29632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (29632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (34632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (34632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (34632) task_wdt: Tasks currently running:[0m
+[0;31mE (34632) task_wdt: CPU 0: main[0m
+[0;31mE (34632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (34632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (36042) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (36042) mqtt_example: Other event id:7[0m
+[0;33mW (36462) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (36462) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (36472) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (36472) mqtt_client: MQTT connect failed[0m
+[0;32mI (36482) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (36482) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (39632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (39632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (39632) task_wdt: Tasks currently running:[0m
+[0;31mE (39632) task_wdt: CPU 0: main[0m
+[0;31mE (39632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (39632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (44632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (44632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (44632) task_wdt: Tasks currently running:[0m
+[0;31mE (44632) task_wdt: CPU 0: main[0m
+[0;31mE (44632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (44632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (46492) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (46492) mqtt_example: Other event id:7[0m
+[0;33mW (46902) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (46902) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (46902) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (46912) mqtt_client: MQTT connect failed[0m
+[0;32mI (46922) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (46922) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (49632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (49632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (49632) task_wdt: Tasks currently running:[0m
+[0;31mE (49632) task_wdt: CPU 0: main[0m
+[0;31mE (49632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (49632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (54632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (54632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (54632) task_wdt: Tasks currently running:[0m
+[0;31mE (54632) task_wdt: CPU 0: main[0m
+[0;31mE (54632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (54632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (56932) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (56932) mqtt_example: Other event id:7[0m
+[0;33mW (57352) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (57352) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (57352) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (57352) mqtt_client: MQTT connect failed[0m
+[0;32mI (57362) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (57372) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (59632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (59632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (59632) task_wdt: Tasks currently running:[0m
+[0;31mE (59632) task_wdt: CPU 0: main[0m
+[0;31mE (59632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (59632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (64632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (64632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (64632) task_wdt: Tasks currently running:[0m
+[0;31mE (64632) task_wdt: CPU 0: main[0m
+[0;31mE (64632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (64632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (67372) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (67372) mqtt_example: Other event id:7[0m
+[0;33mW (67792) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (67792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (67802) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (67802) mqtt_client: MQTT connect failed[0m
+[0;32mI (67812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (67812) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (69632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (69632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (69632) task_wdt: Tasks currently running:[0m
+[0;31mE (69632) task_wdt: CPU 0: main[0m
+[0;31mE (69632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (69632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (74632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (74632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (74632) task_wdt: Tasks currently running:[0m
+[0;31mE (74632) task_wdt: CPU 0: main[0m
+[0;31mE (74632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (74632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (77822) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (77822) mqtt_example: Other event id:7[0m
+[0;33mW (78242) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (78242) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (78242) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (78242) mqtt_client: MQTT connect failed[0m
+[0;32mI (78252) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (78262) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (79632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (79632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (79632) task_wdt: Tasks currently running:[0m
+[0;31mE (79632) task_wdt: CPU 0: main[0m
+[0;31mE (79632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (79632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (84632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (84632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (84632) task_wdt: Tasks currently running:[0m
+[0;31mE (84632) task_wdt: CPU 0: main[0m
+[0;31mE (84632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (84632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (88262) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (88262) mqtt_example: Other event id:7[0m
+[0;33mW (88782) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (88782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (88792) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (88792) mqtt_client: MQTT connect failed[0m
+[0;32mI (88802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (88812) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (89632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (89632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (89632) task_wdt: Tasks currently running:[0m
+[0;31mE (89632) task_wdt: CPU 0: main[0m
+[0;31mE (89632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (89632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (94632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (94632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (94632) task_wdt: Tasks currently running:[0m
+[0;31mE (94632) task_wdt: CPU 0: main[0m
+[0;31mE (94632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (94632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (98812) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (98812) mqtt_example: Other event id:7[0m
+[0;33mW (99332) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (99332) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (99342) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (99342) mqtt_client: MQTT connect failed[0m
+[0;32mI (99352) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (99352) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (99632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (99632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (99632) task_wdt: Tasks currently running:[0m
+[0;31mE (99632) task_wdt: CPU 0: wifi[0m
+[0;31mE (99632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (99632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x4000BFED:0x3FFBFCC0 0x40089FC3:0x3FFBFCD0 0x4008589B:0x3FFBFCF0 0x4017085D:0x3FFBFD10 0x401289D8:0x3FFBFD30 0x4016EAA9:0x3FFBFD50 0x40090799:0x3FFBFD70 0x4009409A:0x3FFBFD90 0x400946B5:0x3FFBFDC0 0x4016CE9A:0x3FFBFDE0 0x4016CF01:0x3FFBFE00 0x40092546:0x3FFBFE20 0x40089C21:0x3FFBFE50
+
+[0;31mE (104632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (104632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (104632) task_wdt: Tasks currently running:[0m
+[0;31mE (104632) task_wdt: CPU 0: main[0m
+[0;31mE (104632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (104632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (109362) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (109362) mqtt_example: Other event id:7[0m
+[0;31mE (109632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (109632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (109632) task_wdt: Tasks currently running:[0m
+[0;31mE (109632) task_wdt: CPU 0: main[0m
+[0;31mE (109632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (109632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;33mW (109782) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (109782) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (109782) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (109782) mqtt_client: MQTT connect failed[0m
+[0;32mI (109792) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (109802) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (114632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (114632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (114632) task_wdt: Tasks currently running:[0m
+[0;31mE (114632) task_wdt: CPU 0: main[0m
+[0;31mE (114632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (114632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;31mE (119632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (119632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (119632) task_wdt: Tasks currently running:[0m
+[0;31mE (119632) task_wdt: CPU 0: main[0m
+[0;31mE (119632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (119632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+
+[0;32mI (119802) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (119802) mqtt_example: Other event id:7[0m
+[0;33mW (120222) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (120222) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (120232) mqtt_example: MQTT_EVENT_ERROR[0m
+[0;31mE (120232) mqtt_client: MQTT connect failed[0m
+[0;32mI (120242) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (120242) mqtt_example: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (124632) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (124632) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (124632) task_wdt: Tasks currently running:[0m
+[0;31mE (124632) task_wdt: CPU 0: main[0m
+[0;31mE (124632) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (124632) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DD0BF:0x3FFB1C90 0x400DD484:0x3FFB1CB0 0x400833BD:0x3FFB1CE0 0x400D720C:0x3FFBA530 0x4016EFA7:0x3FFBA550 0x40089C21:0x3FFBA580
+

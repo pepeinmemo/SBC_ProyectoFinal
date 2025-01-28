@@ -1,0 +1,422 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan 21 2025 18:36:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 storage          Unknown data     01 82 00210000 00100000[0m
+[0;32mI (100) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26114h (155924) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=0003613c vaddr=3ffbdb60 size=059a8h ( 22952) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003baec vaddr=40080000 size=0452ch ( 17708) load[0m
+[0;32mI (182) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b858ch (755084) map[0m
+[0;32mI (441) esp_image: segment 4: paddr=000f85b4 vaddr=4008452c size=19350h (103248) load[0m
+[0;32mI (497) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (497) boot: Disabling RNG early entropy source...[0m
+[0;32mI (508) cpu_start: Multicore app[0m
+[0;32mI (517) cpu_start: Pro cpu start user code[0m
+[0;32mI (517) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (517) cpu_start: Application information:[0m
+[0;32mI (520) cpu_start: Project name:     wifi_softAP[0m
+[0;32mI (525) cpu_start: App version:      1[0m
+[0;32mI (530) cpu_start: Compile time:     Jan 21 2025 18:35:27[0m
+[0;32mI (536) cpu_start: ELF file SHA256:  e68351b33...[0m
+[0;32mI (541) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (547) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (551) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (556) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (561) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (568) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFC9718 len 000168E8 (90 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 4009D87C len 00002784 (9 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;32mI (621) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (626) main_task: Started on CPU0[0m
+[0;32mI (636) main_task: Calling app_main()[0m
+[0;32mI (636) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (726) Control: ESP_WIFI_MODE_AP[0m
+[0;32mI (736) wifi:wifi driver task: 3ffcd6a0, prio:23, stack:6656, core=0[0m
+[0;32mI (756) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (756) wifi:wifi certification version: v7.0[0m
+[0;32mI (756) wifi:config NVS flash: enabled[0m
+[0;32mI (756) wifi:config nano formating: disabled[0m
+[0;32mI (766) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (766) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (776) wifi:Init management short buffer num: 32[0m
+[0;32mI (776) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (776) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (786) wifi:Init static rx buffer num: 10[0m
+[0;32mI (786) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (796) wifi_init: rx ba win: 6[0m
+[0;32mI (796) wifi_init: tcpip mbox: 32[0m
+[0;32mI (796) wifi_init: udp mbox: 6[0m
+[0;32mI (806) wifi_init: tcp mbox: 6[0m
+[0;32mI (806) wifi_init: tcp tx win: 5760[0m
+[0;32mI (816) wifi_init: tcp rx win: 5760[0m
+[0;32mI (816) wifi_init: tcp mss: 1440[0m
+[0;32mI (816) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (826) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (836) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (926) wifi:mode : softAP (e4:65:b8:11:95:45)[0m
+[0;32mI (1036) wifi:Total power save buffer number: 16[0m
+[0;32mI (1036) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1036) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1046) Control: wifi_init_softap finished. SSID:Grupo13 password:agarramelaquemecrece channel:1[0m
+[0;32mI (1046) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1066) Control: Servidor web iniciado[0m
+[0;32mI (1066) BTDM_INIT: BT controller compile version [4012cfb][0m
+[0;32mI (1066) BTDM_INIT: Bluetooth MAC: e4:65:b8:11:95:46[0m
+[0;32mI (1346) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1356) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1356) NimBLE: disc_mode=2[0m
+[0;32mI (1356) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1366) NimBLE: 
+[0m
+[0;32mI (17616) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (17616) wifi:station: b2:ab:a0:18:98:c1 join, AID=1, bgn, 40U[0m
+[0;32mI (17646) Control: station b2:ab:a0:18:98:c1 join, AID=1[0m
+
+
+
+
+
+[0;32mI (17776) Control: Acceso correcto[0m
+[0;32mI (17986) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (18166) wifi:<ba-add>idx:2 (ifx:1, b2:ab:a0:18:98:c1), tid:0, ssn:17, winSize:64[0m
+[0;32mI (18316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (19316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (20316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (21316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (22316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (23316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (24316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (25316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (25766) GAP: BLE GAP EVENT CONNECT OK![0m
+[0;32mI (26316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (27316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (28316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (29316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (30316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (31316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (32316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 1
+[0;32mI (32476) Control: Acción: Desbloquear[0m
+[0;32mI (33316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (34316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (35316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (36316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (37316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (37846) Control: Acción: Abrir[0m
+[0;32mI (38316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (39316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (40316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (41296) Control: Acción: Cerrar[0m
+[0;32mI (41316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (42316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (43316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (44316) Control: Usuario verificado[0m
+Puerta: 0, Acceso: 1, Bloqueada: 0
+[0;32mI (44456) Control: Acción: Abrir[0m
+[0;32mI (45316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (46316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (47316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;33mW (47556) wifi:[ADDBA]rx delba, code:1, delete tid:0[0m
+[0;32mI (48316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (49316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (50316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (51316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (52316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (53316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (54316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (55316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (56316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (57316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (58316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (59316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (60316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (61316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (62316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (63316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (64316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (65316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (66316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (67316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (68316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (69316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (70316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (71316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (72316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (73316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (74316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (75316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (76316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (77316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (78316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (79316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (80316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (81316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (82316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (83316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (84316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (85316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (86316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (87316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (88316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (89316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (90316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (91316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (92316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (93316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (94316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (95316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (96316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (97316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (98316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (99316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (100316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (101316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (102316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (103316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (104316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (105316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (106316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (107316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (108316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (109316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (110316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (111316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (112316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (113316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (114316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (115316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (116316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (117316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (118316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (119316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (120316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (121316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (122316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (123316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (124316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (125316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (126316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (127316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (128316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (129316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (130316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (131316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (132316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (133316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (134316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (135316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (136316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (137316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (138316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (139316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (140316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (141316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (142316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (143316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (144316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (145316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (146316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (147316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (148316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (149316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (150316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (151316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (152316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (153316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (154316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (155316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (156316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (157316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (158316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (159316) Control: Usuario verificado[0m
+Puerta: 1, Acceso: 1, Bloqueada: 0
+[0;32mI (160186) wifi:station: b2:ab:a0:18:98:c1 leave, AID = 1, bss_flags is 9014339, bss:0x3ffdf69c[0m
+[0;32mI (160186) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (160186) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (160186) Control: station b2:ab:a0:18:98:c1 leave, AID=1[0m
+[0;32mI (160316) Control: Usuario verificado[0m
+
+
+
+
+
+[0;32mI (160326) Control: Cliente desconectado[0m
+Puerta: 1, Acceso: 0, Bloqueada: 0
+[0;32mI (199886) GAP: BLE GAP EVENT DISCONNECTED[0m
+[0;32mI (199886) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (199886) NimBLE: disc_mode=2[0m
+[0;32mI (199886) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (199896) NimBLE: 
+[0m

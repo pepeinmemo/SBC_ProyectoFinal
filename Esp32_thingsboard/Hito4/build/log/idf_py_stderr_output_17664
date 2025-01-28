@@ -1,0 +1,239 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d7206: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:142
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40089fc3: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x40089a88: xQueueSemaphoreTake at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x40082940: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/locks.c:146
+0x40082a29: _lock_acquire at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/locks.c:154
+0x40128999: esp_phy_enable at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_phy/src/phy_init.c:236
+0x4016eaa9: esp_phy_enable_wrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/esp32/esp_adapter.c:583
+0x40090799: wifi_rf_phy_enable at ??:?
+0x4009409a: pm_dream at ??:?
+0x4016bee4: pm_tx_data_process at ??:?
+0x4016bf41: pm_on_data_tx at ??:?
+0x400918b7: ppMapTxQueue at ??:?
+0x40091b43: ppTxPkt at ??:?
+0x4008fbb2: ieee80211_output_process at ??:?
+0x40092585: ppTask at ??:?
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x400DD0BF: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x400DD0BF']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x400DD484: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x400DD484']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x400833BD: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x400833BD']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x40089FC3: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x40089FC3']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x4008589B: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x4008589B']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x4017085D: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x4017085D']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x401289D8: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x401289D8']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x4016EAA9: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x4016EAA9']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x40090799: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x40090799']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x4009409A: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x4009409A']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x400946B5: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x400946B5']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x4016CE9A: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x4016CE9A']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x4016CF01: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x4016CF01']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x40092546: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x40092546']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[1;31mxtensa-esp32-elf-addr2line -pfiaC -e C:\Users\alvar\workspace\Hito4\build\mqtt_tcp.elf 0x40089C21: Command '['xtensa-esp32-elf-addr2line', '-pfiaC', '-e', 'C:\\Users\\alvar\\workspace\\Hito4\\build\\mqtt_tcp.elf', '0x40089C21']' returned non-zero exit status 1.[0m
+[1;31mELF file is missing or has changed, the build folder was probably modified.[0m
+[0;33m--- 0x4000bfed: _xtos_set_intlevel in ROM
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400dd0bf: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dd484: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400833bd: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d720c: app_main at C:/Users/alvar/workspace/Hito4/main/app_main.c:145
+0x4016efa7: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x40089c21: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Espressif\frameworks\esp-idf-v5.2.2\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

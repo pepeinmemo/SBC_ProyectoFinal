@@ -1,0 +1,705 @@
+	��ѹesp32: SPI Speed      : 40MHz[0m
+[0;32m�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 15 2024 18:28:55[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26680h (157312) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000366a8 vaddr=3ffb0000 size=03bdch ( 15324) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a28c vaddr=40080000 size=05d8ch ( 23948) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a32f4h (668404) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e331c vaddr=40085d8c size=10c00h ( 68608) load[0m
+[0;32mI (441) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (441) boot: Disabling RNG early entropy source...[0m
+[0;32mI (453) cpu_start: Multicore app[0m
+[0;32mI (462) cpu_start: Pro cpu start user code[0m
+[0;32mI (462) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (462) cpu_start: Application information:[0m
+[0;32mI (465) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (470) cpu_start: App version:      1[0m
+[0;32mI (474) cpu_start: Compile time:     Jan 16 2025 17:47:43[0m
+[0;32mI (480) cpu_start: ELF file SHA256:  b498bfebf...[0m
+[0;32mI (486) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (491) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (496) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (501) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (506) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (513) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (519) heap_init: At 3FFB82B0 len 00027D50 (159 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 4009698C len 00009674 (37 KiB): IRAM[0m
+[0;32mI (545) spi_flash: detected chip: generic[0m
+[0;32mI (549) spi_flash: flash io: dio[0m
+[0;33mW (552) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (566) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (575) main_task: Started on CPU0[0m
+[0;32mI (585) main_task: Calling app_main()[0m
+[0;32mI (585) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (585) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (595) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (605) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+eFuse Two Point: NOT supported
+eFuse Vref: Supported
+Characterized using eFuse Vref
+[0;32mI (625) mqtt_example: [APP] Startup..[0m
+[0;32mI (625) mqtt_example: [APP] Free memory: 278252 bytes[0m
+[0;32mI (635) mqtt_example: [APP] IDF version: v5.2.2-dirty[0m
+[0;32mI (695) example_connect: Start example_connect.[0m
+[0;32mI (705) wifi:wifi driver task: 3ffc00a0, prio:23, stack:6656, core=0[0m
+[0;32mI (725) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (725) wifi:wifi certification version: v7.0[0m
+[0;32mI (725) wifi:config NVS flash: enabled[0m
+[0;32mI (725) wifi:config nano formating: disabled[0m
+[0;32mI (735) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (745) wifi:Init management short buffer num: 32[0m
+[0;32mI (745) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (755) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (755) wifi:Init static rx buffer num: 10[0m
+[0;32mI (755) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (765) wifi_init: rx ba win: 6[0m
+[0;32mI (765) wifi_init: tcpip mbox: 32[0m
+[0;32mI (775) wifi_init: udp mbox: 6[0m
+[0;32mI (775) wifi_init: tcp mbox: 6[0m
+[0;32mI (775) wifi_init: tcp tx win: 5760[0m
+[0;32mI (785) wifi_init: tcp rx win: 5760[0m
+[0;32mI (785) wifi_init: tcp mss: 1440[0m
+[0;32mI (795) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (795) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (885) wifi:mode : sta (24:6f:28:7c:20:7c)[0m
+[0;32mI (885) wifi:enable tsf[0m
+[0;32mI (895) example_connect: Connecting to Luis Cris y Alvaro...[0m
+[0;32mI (895) example_connect: Waiting for IP(s)[0m
+[0;32mI (3565) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (3565) wifi:state: init -> auth (b0)[0m
+[0;32mI (3565) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3575) wifi:state: assoc -> run (10)[0m
+[0;32mI (3585) wifi:<ba-add>idx:0 (ifx:0, d4:60:e3:2e:4b:11), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3605) wifi:connected with Luis Cris y Alvaro, aid = 9, channel 10, BW20, bssid = d4:60:e3:2e:4b:11[0m
+[0;32mI (3615) wifi:security: WPA2-PSK, phy: bgn, rssi: -63[0m
+[0;32mI (3615) wifi:pm start, type: 1[0m
+
+[0;32mI (3615) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3695) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4625) esp_netif_handlers: example_netif_sta ip: 192.168.0.29, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4625) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.29[0m
+[0;32mI (4695) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:266f:28ff:fe7c:207c, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4695) example_common: Connected to example_netif_sta[0m
+[0;32mI (4705) example_common: - IPv4 address: 192.168.0.29,[0m
+[0;32mI (4705) example_common: - IPv6 address: fe80:0000:0000:0000:266f:28ff:fe7c:207c, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4725) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (4725) mqtt_example: Other event id:7[0m
+[0;32mI (5035) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=1[0m
+[0;32mI (5045) mqtt_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5235) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=3[0m
+[0;32mI (5235) mqtt_example: MQTT_EVENT_SUBSCRIBED, msg_id=51261[0m
+[0;32mI (5335) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (5545) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (5545) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=58758[0m
+[0;32mI (5555) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (5555) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/39
+DATA={"method":"cerrar","params":{}}
+[0;32mI (5565) mqtt_example: RPC Request ID: 39[0m
+[0;32mI (5645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (5695) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (5695) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=24814[0m
+[0;32mI (5945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (6245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (6545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (6845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (7145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (7445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (7745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (8045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (8345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (8645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (8945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (9245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (9545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (9845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (10145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (10445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (10745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (11045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (11345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (11645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (11945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (12245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (12545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (12845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (13145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (13445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (13745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (14045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (14345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (14645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (14945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (15245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (15545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (15845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (16145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (16445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (16745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (17045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (17345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (17645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (17945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (18135) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (18135) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=25869[0m
+[0;32mI (18145) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (18155) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/40
+DATA={"method":"abrir","params":{}}
+[0;32mI (18165) mqtt_example: RPC Request ID: 40[0m
+[0;32mI (18245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (18545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (18845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (19145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (19445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (19745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (20045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (20345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (20645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (20945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (21245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (21545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (21845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (22145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (22445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (22745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (23045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (23345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (23645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (23945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (24245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (24545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (24845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (25145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (25445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (25745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (26045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (26345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (26645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (26945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (27245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (27545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (27845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (28145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (28445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (28745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (29045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (29345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (29505) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (29505) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/41
+DATA={"method":"cerrar","params":{}}
+[0;32mI (29515) mqtt_example: RPC Request ID: 41[0m
+[0;32mI (29515) mqtt_example: Mandando señal.....[0m
+[0;32mI (29645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (29945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (30245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (30545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (30845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (31145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (31445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (31745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (32045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (32345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (32645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (32945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (33245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (33545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (33845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (34145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (34445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (34745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (35045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (35135) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (35135) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/42
+DATA={"method":"abrir","params":{}}
+[0;32mI (35145) mqtt_example: RPC Request ID: 42[0m
+[0;32mI (35155) mqtt_example: Mandando señal.....[0m
+[0;32mI (35345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (35645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (35945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (36245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (36545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (36845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (37145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (37445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (37745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (38045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (38345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (38645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (38945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (39245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (39545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (39845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (40145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (40445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (40745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (41045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (41185) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (41185) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=1787[0m
+[0;32mI (41195) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (41195) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/43
+DATA={"method":"cerrar","params":{}}
+[0;32mI (41205) mqtt_example: RPC Request ID: 43[0m
+[0;32mI (41345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (41645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (41945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (42245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (42545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (42845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (43145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (43445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (43745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (44045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (44345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (44555) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (44555) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/44
+DATA={"method":"abrir","params":{}}
+[0;32mI (44565) mqtt_example: RPC Request ID: 44[0m
+[0;32mI (44575) mqtt_example: Mandando señal.....[0m
+[0;32mI (44645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (44945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (45245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (45545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (45845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (46145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (46445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (46745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (47045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (47345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (47645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (47945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (48245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (48545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (48845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (49145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (49445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (49745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (50045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (50345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (50645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (50945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (51245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (51545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (51845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (52145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (52445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (52745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (53045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (53345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (53645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (53945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (54245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (54545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (54845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (55145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (55445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (55745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (56045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (56345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (56645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (56945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (57245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (57545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (57845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (58145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (58445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (58745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (59045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (59345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (59645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (59945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (60245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (60545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (60845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (61145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (61445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (61745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (62045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (62345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (62645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (62945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (63245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (63545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (63845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (64145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (64445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (64745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (65045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (65345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (65645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (65945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (66245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (66545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (66845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (67145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (67445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (67745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (68045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (68345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (68645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (68945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (69245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (69545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (69845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (70145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (70445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (70745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (71045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (71345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (71645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (71945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (72245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (72545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (72845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (73145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (73445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (73745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (74045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (74345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (74645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (74945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (75245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (75545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (75845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (76145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (76445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (76745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (77045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (77345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (77645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (77945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (78245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (78545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (78845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (79145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (79445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (79745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (80045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (80345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (80645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (80945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (81245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (81545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (81845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (82145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (82445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (82745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (83045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (83345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (83645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (83945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (84245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (84545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (84845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (85145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (85445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (85745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (86045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (86345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (86645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (86945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (87245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (87545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (87845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (88145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (88445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (88745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (89045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (89345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (89645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (89945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (90245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (90545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (90845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (91145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (91445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (91745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (92045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (92345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (92645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (92945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (93245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (93545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (93845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (94145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (94445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (94745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (95045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (95345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (95645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (95945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (96245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (96545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (96845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (97145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (97445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (97745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (98045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (98345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (98645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (98945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (99245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (99545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (99845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (100065) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (100065) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=39487[0m
+[0;32mI (100145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (100445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (100745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (101045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (101345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (101645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (101945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (102245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (102545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (102845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (103035) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (103035) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=22180[0m
+[0;32mI (103045) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (103045) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/45
+DATA={"method":"cerrar","params":{}}
+[0;32mI (103055) mqtt_example: RPC Request ID: 45[0m
+[0;32mI (103145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (103445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (103745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (104045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (104345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (104645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (104945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (105245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (105545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (105845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (106145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (106305) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (106305) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/46
+DATA={"method":"abrir","params":{}}
+[0;32mI (106315) mqtt_example: RPC Request ID: 46[0m
+[0;32mI (106325) mqtt_example: Mandando señal.....[0m
+[0;32mI (106445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (106745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (107045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (107345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (107645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (107945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (108245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (108545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (108845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (109145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (109445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (109745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (110045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (110345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (110645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (110915) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (110915) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/47
+DATA={"method":"cerrar","params":{}}
+[0;32mI (110925) mqtt_example: RPC Request ID: 47[0m
+[0;32mI (110935) mqtt_example: Mandando señal.....[0m
+[0;32mI (110945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (111245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (111545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (111845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (112145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (112445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (112745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (113045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (113345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (113645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (113945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (114245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (114505) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (114505) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/48
+DATA={"method":"abrir","params":{}}
+[0;32mI (114515) mqtt_example: RPC Request ID: 48[0m
+[0;32mI (114515) mqtt_example: Mandando señal.....[0m
+[0;32mI (114545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (114845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (115145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (115445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (115745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (116045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (116345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (116645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (116945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (117245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (117545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (117845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (118145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (118445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (118745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (119045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (119345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (119645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (119945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (120245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (120545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (120845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (121145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (121445) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (121745) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (122045) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (122345) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (122645) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (122945) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (123245) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (123545) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (123845) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (124145) mqtt_example: Valor devuelto 0, 0[0m
+[0;32mI (124445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (124635) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (124645) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=49890[0m
+[0;32mI (124745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (125045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (125345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (125645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (125945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (126245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (126545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (126795) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (126795) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/49
+DATA={"method":"cerrar","params":{}}
+[0;32mI (126805) mqtt_example: RPC Request ID: 49[0m
+[0;32mI (126845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (127145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (127445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (127745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (128045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (128345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (128645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (128945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (129245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (129545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (129845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (130145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (130445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (130745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (131045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (131345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (131395) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (131395) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/50
+DATA={"method":"abrir","params":{}}
+[0;32mI (131405) mqtt_example: RPC Request ID: 50[0m
+[0;32mI (131415) mqtt_example: Mandando señal.....[0m
+[0;32mI (131645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (131945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (132245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (132545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (132845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (133145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (133445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (133745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (134045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (134165) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=6[0m
+[0;32mI (134165) mqtt_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/51
+DATA={"method":"cerrar","params":{}}
+[0;32mI (134175) mqtt_example: RPC Request ID: 51[0m
+[0;32mI (134175) mqtt_example: Mandando señal.....[0m
+[0;32mI (134345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (134645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (134945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (135245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (135545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (135845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (136145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (136445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (136745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (137045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (137345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (137645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (137945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (138245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (138545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (138845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (139145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (139445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (139745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (140045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (140345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (140645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (140945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (141245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (141545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (141845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (142145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (142445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (142745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (143045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (143345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (143645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (143945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (144245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (144545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (144845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (145145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (145445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (145745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (146045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (146345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (146645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (146945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (147245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (147545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (147845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (148145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (148445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (148745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (149045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (149345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (149645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (149945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (150245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (150545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (150845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (151145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (151445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (151745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (152045) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (152345) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (152645) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (152945) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (153245) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (153545) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (153845) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (154145) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (154445) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (154745) mqtt_example: Valor devuelto 1, 0[0m
+[0;32mI (155045) mqtt_example: Valor devuelto 1, 0[0m

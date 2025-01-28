@@ -1,0 +1,99 @@
+[1/11] cmd.exe /C "cd /D C:\Users\alvar\workspace\SBC\Proyecto\build\esp-idf\main && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/spiffs/spiffsgen.py 0x100000 C:/Users/alvar/workspace/SBC/Proyecto/spiffs_data C:/Users/alvar/workspace/SBC/Proyecto/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\alvar\workspace\SBC\Proyecto\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/alvar/workspace/SBC/Proyecto/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/softap_example_main.c.obj
+C:/Users/alvar/workspace/SBC/Proyecto/main/softap_example_main.c: In function 'device_write':
+C:/Users/alvar/workspace/SBC/Proyecto/main/softap_example_main.c:53:12: warning: unused variable 'data' [-Wunused-variable]
+   53 |     char * data = (char *)ctxt->om->om_data;
+      |            ^~~~
+[4/9] Linking C static library esp-idf\main\libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable wifi_softAP.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/alvar/workspace/SBC/Proyecto/build/wifi_softAP.bin
+[8/9] cmd.exe /C "cd /D C:\Users\alvar\workspace\SBC\Proyecto\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/alvar/workspace/SBC/Proyecto/build/partition_table/partition-table.bin C:/Users/alvar/workspace/SBC/Proyecto/build/wifi_softAP.bin"
+wifi_softAP.bin binary size 0x101920 bytes. Smallest app partition is 0x200000 bytes. 0xfe6e0 bytes (50%) free.
+[8/9] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/componentesptool.py --chip esp32 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 wifi_softAP.bin 0x8000 partition_table/partition-table.bin 0x210000 storage.bin
+esptool.py v4.7.0
+Serial port COM6
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 41.01MHz is quite different to normalized freq 40MHz. Unsupported crystal in use?
+Crystal is 40MHz
+MAC: e4:65:b8:11:95:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00111fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00210000 to 0x0030ffff...
+Compressed 26720 bytes to 16347...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16347 compressed) at 0x00001000 in 0.6 seconds (effective 342.7 kbit/s)...
+Hash of data verified.
+Compressed 1055008 bytes to 663220...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d267... (4 %)
+Writing at 0x000266f0... (7 %)
+Writing at 0x0002b553... (9 %)
+Writing at 0x00033404... (12 %)
+Writing at 0x0003e37c... (14 %)
+Writing at 0x00043ff8... (17 %)
+Writing at 0x00049b90... (19 %)
+Writing at 0x0004fc4c... (21 %)
+Writing at 0x00055c9a... (24 %)
+Writing at 0x0005bac4... (26 %)
+Writing at 0x00061d12... (29 %)
+Writing at 0x00067ba5... (31 %)
+Writing at 0x0006db9d... (34 %)
+Writing at 0x0007429d... (36 %)
+Writing at 0x00079c0e... (39 %)
+Writing at 0x0007f207... (41 %)
+Writing at 0x00084578... (43 %)
+Writing at 0x000899d0... (46 %)
+Writing at 0x0008ed8c... (48 %)
+Writing at 0x00094419... (51 %)
+Writing at 0x00099b99... (53 %)
+Writing at 0x0009fa10... (56 %)
+Writing at 0x000a5202... (58 %)
+Writing at 0x000aaed4... (60 %)
+Writing at 0x000b0baa... (63 %)
+Writing at 0x000b6403... (65 %)
+Writing at 0x000bbe42... (68 %)
+Writing at 0x000c1d0a... (70 %)
+Writing at 0x000c7fed... (73 %)
+Writing at 0x000cdaf6... (75 %)
+Writing at 0x000d3d9f... (78 %)
+Writing at 0x000d9feb... (80 %)
+Writing at 0x000e0a6f... (82 %)
+Writing at 0x000ea6c4... (85 %)
+Writing at 0x000f22a4... (87 %)
+Writing at 0x000f7f70... (90 %)
+Writing at 0x000fd8dd... (92 %)
+Writing at 0x00103400... (95 %)
+Writing at 0x001097cc... (97 %)
+Writing at 0x0010eb80... (100 %)
+Wrote 1055008 bytes (663220 compressed) at 0x00010000 in 15.2 seconds (effective 556.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 624.3 kbit/s)...
+Hash of data verified.
+Compressed 1048576 bytes to 2108...
+Writing at 0x00210000... (100 %)
+Wrote 1048576 bytes (2108 compressed) at 0x00210000 in 3.4 seconds (effective 2492.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+s/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/alvar/workspace/SBC/Proyecto/build -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"

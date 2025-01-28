@@ -1,0 +1,84 @@
+[1/6] cmd.exe /C "cd /D C:\Users\alvar\workspace\SBC\Proyecto\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/alvar/workspace/SBC/Proyecto/build/partition_table/partition-table.bin C:/Users/alvar/workspace/SBC/Proyecto/build/wifi_softAP.bin"
+wifi_softAP.bin binary size 0x101900 bytes. Smallest app partition is 0x200000 bytes. 0xfe700 bytes (50%) free.
+[2/6] cmd.exe /C "cd /D C:\Users\alvar\workspace\SBC\Proyecto\build\esp-idf\main && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/spiffs/spiffsgen.py 0x100000 C:/Users/alvar/workspace/SBC/Proyecto/spiffs_data C:/Users/alvar/workspace/SBC/Proyecto/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[3/6] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\alvar\workspace\SBC\Proyecto\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/alvar/workspace/SBC/Proyecto/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[3/4] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Esesptool.py --chip esp32 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 wifi_softAP.bin 0x8000 partition_table/partition-table.bin 0x210000 storage.bin
+esptool.py v4.7.0
+Serial port COM6
+Connecting..........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: e4:65:b8:11:95:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00111fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00210000 to 0x0030ffff...
+Compressed 26720 bytes to 16347...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16347 compressed) at 0x00001000 in 0.6 seconds (effective 340.1 kbit/s)...
+Hash of data verified.
+Compressed 1054976 bytes to 663207...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d267... (4 %)
+Writing at 0x000266f9... (7 %)
+Writing at 0x0002b55e... (9 %)
+Writing at 0x0003345d... (12 %)
+Writing at 0x0003e399... (14 %)
+Writing at 0x00043ff5... (17 %)
+Writing at 0x00049ba5... (19 %)
+Writing at 0x0004fc67... (21 %)
+Writing at 0x00055cae... (24 %)
+Writing at 0x0005bade... (26 %)
+Writing at 0x00061d27... (29 %)
+Writing at 0x00067bbc... (31 %)
+Writing at 0x0006dbb1... (34 %)
+Writing at 0x000742b7... (36 %)
+Writing at 0x00079c28... (39 %)
+Writing at 0x0007f21a... (41 %)
+Writing at 0x00084598... (43 %)
+Writing at 0x000899ec... (46 %)
+Writing at 0x0008eda2... (48 %)
+Writing at 0x00094422... (51 %)
+Writing at 0x00099ba3... (53 %)
+Writing at 0x0009fa15... (56 %)
+Writing at 0x000a5208... (58 %)
+Writing at 0x000aaedf... (60 %)
+Writing at 0x000b0bad... (63 %)
+Writing at 0x000b6401... (65 %)
+Writing at 0x000bbe3e... (68 %)
+Writing at 0x000c1d2d... (70 %)
+Writing at 0x000c7fec... (73 %)
+Writing at 0x000cdaf3... (75 %)
+Writing at 0x000d3d9b... (78 %)
+Writing at 0x000d9fe2... (80 %)
+Writing at 0x000e0a63... (82 %)
+Writing at 0x000ea6bb... (85 %)
+Writing at 0x000f22a7... (87 %)
+Writing at 0x000f7f71... (90 %)
+Writing at 0x000fd8db... (92 %)
+Writing at 0x001033f7... (95 %)
+Writing at 0x001097d2... (97 %)
+Writing at 0x0010eb7b... (100 %)
+Wrote 1054976 bytes (663207 compressed) at 0x00010000 in 15.1 seconds (effective 557.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 803.0 kbit/s)...
+Hash of data verified.
+Compressed 1048576 bytes to 2108...
+Writing at 0x00210000... (100 %)
+Wrote 1048576 bytes (2108 compressed) at 0x00210000 in 2.8 seconds (effective 3031.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+pressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/alvar/workspace/SBC/Proyecto/build -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"
