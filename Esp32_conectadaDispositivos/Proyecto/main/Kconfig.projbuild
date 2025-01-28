@@ -8,7 +8,7 @@ menu "Example Configuration"
 
     config ESP_WIFI_PASSWORD
         string "WiFi Password"
-        default "agarramelaquemecrece"
+        default "pass"
         help
             WiFi password (WPA or WPA2) for the example to use.
     config ESP_WIFI_CHANNEL
